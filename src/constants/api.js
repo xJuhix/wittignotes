@@ -1,1 +1,1 @@
-export const BASE_URL = "";
+export const BASE_URL = "http://wp-subdir.wittignotes.com/wp-json/wp/v2/posts";
