@@ -1,0 +1,25 @@
+body {
+    background: $colour-background;
+}
+
+.navbar{
+    background: $colour-headerfooter;
+}
+.nav-link {
+    font-family: $font-navlink;
+    color: $colour-navlink !important;
+    font-size: 24px;
+    padding: 1rem;
+    margin-right: 30px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: all 0.4s;
+
+   &__navlink:hover{
+        text-decoration: underline 3px;
+        color:$colour-secondary;
+    }
+    
+}
+
+
