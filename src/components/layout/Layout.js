@@ -1,9 +1,12 @@
 import React from "react";
-import {Nav, Navbar, Container, Form, FormControl, Button } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import Home from "../home/Home";
-import Contact from "../contact/Contact";
+import Contact from "../pages/Contact";
+import ArticleList from "../article/ArticleList";
 import ArticleDetail from "../article/ArticleDetail";
+
+
 
 function Layout() {
 	return (
@@ -30,19 +33,18 @@ function Layout() {
 							Books
 						</NavLink>
 						<NavLink to="/economics" className="nav-link">
-							Contact
+							Economics
 						</NavLink>
 						<NavLink to="/productivity" className="nav-link">
-							Contact
+							Productivy
 						</NavLink>
 						<NavLink to="/contact" className="nav-link">
 							Contact
 						</NavLink>
+						<NavLink to="/article" className="nav-link">
+							Search
+						</NavLink>
 					</Nav>
-					<Form inline>
-						<FormControl type="text" placeholder="Search" className="mr-sm-2" />
-						<Button variant="outline-light">Search</Button>
-					</Form>
 				</Navbar.Collapse>
 			</Navbar>
 			<Container>
@@ -52,6 +54,7 @@ function Layout() {
 					<Route path="/economics" component={Contact} />
 					<Route path="/productivity" component={Contact} />
 					<Route path="/contact" component={Contact} />
+					<Route path="/article" component={ArticleList} />
 					<Route path="/article/:id" component={ArticleDetail} />
 				</Switch>
 			</Container>

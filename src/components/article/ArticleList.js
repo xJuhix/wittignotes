@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 
-function Home() {
+function AllArticles() {
     const [articles, setArticles] = useState([]);
     const [filtredarticles, setFilteredArticles] = useState([]);
 
@@ -25,7 +25,7 @@ function Home() {
         console.log(event.target.value)
         const searchText = event.target.value.toLowerCase();
         const filteredArray = articles.filter(article => {
-            return article.name.toLowerCase().includes(searchText)
+            return article.title.toLowerCase().includes(searchText)
         })
         setFilteredArticles(filteredArray);
     }
@@ -36,7 +36,7 @@ function Home() {
             <Row>
                 {filtredarticles.map(article => (
                     <Col sm={6} md={3} key={article.id}>
-                        <ArticleItem id={article.id} name={article.name} background_image={article.background_image} rating={article.rating} released={article.released} />
+                        <ArticleItem id={article.id} date={article.date} author={article.author} title={article.title} article_image={article.featured_image} read-time={article.readtime} />
                     </Col>
                 ))}
             </Row>
@@ -44,4 +44,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default AllArticles;
