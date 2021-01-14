@@ -1,12 +1,14 @@
 import React from "react";
 import Heading from "../layout/Heading";
-import ContactForm from "../contact/ContactForm";
+import Jumbotron from "react-bootstrap/Jumbotron";
+
 
 export function Contact() {
 	return (
 		<>
-            <Heading title="Contact" />
-			<ContactForm />
+		<Jumbotron className="jumbotron-Books" style={{ backgroundImage: "url(images/booksbanner.jpg)" }}>
+        </Jumbotron>
+        <Heading title="Books" />
 		</>
 	);
 }

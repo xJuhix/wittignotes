@@ -7,12 +7,11 @@ import Container from "react-bootstrap/Container";
 export function Home() {
 	return (
 		<>
-		<Jumbotron>
+		<Jumbotron className="jumbotron-Index">
 			<Container>
 				<Heading title="My opinions and views on Books, Economics and Productivity" />
 			</Container>	
 		</Jumbotron>
-
 		</>
 	);
 }
