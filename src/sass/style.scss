@@ -1,4 +1,9 @@
-@import "partials/__base";
-@import "partials/__layout";
+@import "partials/__custom";
 @import "partials/__typography";
+@import "partials/__form";
+@import "partials/__layout";
+@import "partials/__jumbo";
+
+
+
 @import "~bootstrap/scss/bootstrap";

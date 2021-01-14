@@ -1,0 +1,39 @@
+// custom
+
+$colour-headerfooter:#6E737E;
+$colour-background:#868D97;
+$colour-heading:#000000;
+$colour-primary:#3C3C3C;
+$colour-secondary:#ffffff;
+$colour-blue:#9CCCDD;
+
+
+$colour-input: #3C3C3C;
+
+$medium-width: 768px;
+
+
+
+// bootstrap
+$theme-colors: (
+    "primary": $colour-primary,
+    "dark": $colour-headerfooter,
+);
+
+$input-bg: $colour-secondary;
+$input-border-color: $colour-input;
+$border-radius: 3px;
+
+$input-placeholder-color:$colour-primary;
+$input-plaintext-color: $colour-primary;
+
+$headings-color: $colour-heading;
+
+$body-bg:$colour-background;
+
+
+$card-bg: transparent;
+$card-cap-bg: white;
+
+
+

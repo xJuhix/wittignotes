@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "../layout/Heading";
-import { Jumbotron, Container } from "react-bootstrap";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Container from "react-bootstrap/Container";
 
 
 export function Home() {

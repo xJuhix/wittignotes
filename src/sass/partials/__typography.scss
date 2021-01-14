@@ -1,4 +1,32 @@
+//Typography
+
+$font-h1:'Cormorant Garamond Bold', serif;
+$font-h2:'Montserrat', sans-serif;
+$font-h3:'Montserrat', sans-serif;
+$font-navlink:'Playfair Display' , serif;
+$font-p: 'Open Sans', sans-serif;
+
+
 h1{
     font-family: $font-h1;
     margin-top: 3rem;
+    text-align: center;
+}
+
+h2{
+    font-family: $font-h2;
+}
+
+h3{
+    font-family: $font-h3;
+}
+
+p{
+    font-family: $font-p;
+}
+
+.nav-link{
+    font-family: $font-navlink;
+    color: $colour-secondary;
+    font-size: 22px;
 }

@@ -11,7 +11,7 @@ body {
 }
 .nav-link {
     font-family: $font-navlink;
-    color: $colour-navlink !important;
+    color: $colour-secondary !important;
     font-size: 22px;
     padding: 1rem;
     margin-right: 30px;
@@ -25,7 +25,12 @@ body {
     }
     
 }
-
-.jumbotron{
-    background-color: $colour-navlink !important;    ;
+  
+.contact-container{
+    padding: 1.5rem 3rem;
+    margin-top: 3rem;
+    height: 730px;
+    width: 550px !important;
+    background-color: $colour-secondary;
+    
 }

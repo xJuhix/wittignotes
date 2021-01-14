@@ -2,16 +2,22 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import {Form, Button} from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 import ErrorMessage from "./ErrorMessage";
 
 
 const schema = yup.object().shape({
     
-    fullName: yup
+    firstName: yup
         .string()
-        .required("Full name is required")
-        .min(3, "Your full name must contain at least 3 characters"),
+        .required("First name is required")
+        .min(2, "Your first name must contain at least 2 characters"),
+
+    lastName: yup
+        .string()
+        .required("Last name is required")
+        .min(2, "Your last name must contain at least 2 characters"),
 
     email: yup
         .string()
@@ -25,7 +31,6 @@ const schema = yup.object().shape({
 });
 
 function ContactForm() {
-    
     const { register, handleSubmit, errors } = useForm({
         resolver: yupResolver(schema),
     });
@@ -45,9 +50,15 @@ function ContactForm() {
                     </div> 
             }
             <Form.Group>
-                <Form.Label>Full name:</Form.Label>
-                <Form.Control type="text" name="fulltName" placeholder="Enter your full name" ref={register} />
-                {errors.firstName && <ErrorMessage>{errors.fullName.message}</ErrorMessage>}
+                <Form.Label>First name:</Form.Label>
+                <Form.Control type="text" name="firstName" placeholder="Enter your first name" ref={register} />
+                {errors.firstName && <ErrorMessage>{errors.firstName.message}</ErrorMessage>}
+            </Form.Group>
+            
+            <Form.Group>
+                <Form.Label>Last name:</Form.Label>
+                <Form.Control type="text" name="lastName" placeholder="Enter your Last name" ref={register} />
+                {errors.lastName && <ErrorMessage>{errors.lastName.message}</ErrorMessage>}
             </Form.Group>
 
             <Form.Group>
@@ -62,7 +73,8 @@ function ContactForm() {
                 {errors.messageField && <ErrorMessage>{errors.messageField.message}</ErrorMessage>}
             </Form.Group>
 
-            <Button type="submit" variant="primary">Submit</Button>     
+
+            <Button variant="send" size="lg" bloc type="submit">Send</Button>     
         </Form>
         
     );
