@@ -18,7 +18,7 @@ function Layout() {
 					<Navbar.Brand href="#home">
 						<img
 							src={logo}
-							width="250"
+							width="300"
 							height="70"
 							className="d-inline-block align-top"
 							alt="WittigNotes logo"

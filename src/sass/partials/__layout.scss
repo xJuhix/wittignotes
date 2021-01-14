@@ -5,10 +5,14 @@ body {
 .navbar{
     background: $colour-headerfooter;
 }
+
+.navbar-brand{
+    margin-right: 3rem;
+}
 .nav-link {
     font-family: $font-navlink;
     color: $colour-navlink !important;
-    font-size: 24px;
+    font-size: 22px;
     padding: 1rem;
     margin-right: 30px;
     border-radius: 5px;
@@ -22,4 +26,6 @@ body {
     
 }
 
-
+.jumbotron{
+    background-color: $colour-navlink !important;    ;
+}

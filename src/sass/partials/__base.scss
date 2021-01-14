@@ -1,39 +1,16 @@
-/*@font-face{
-    font-family: 'CormorantGaramond';
-    src: url('./assets/fonts/');
-}
-@font-face{
-    font-family: 'MontserratSemibold';
-    src: url('./assets/fonts/');
-}
-@font-face{
-    font-family: 'MontserratMedium';
-    src: url('./assets/fonts/');
-}
-@font-face{
-    font-family: 'OpenSans';
-    src: url('./assets/fonts/');
-}
-@font-face{
-    font-family:'PlatFairDisplay' ;
-    src: url('./assets/fonts/');
-}*/
-
-
 //Colours
+
 $colour-headerfooter:#6E737E;
 $colour-background:#868D97;
 $colour-heading:#000000;
 $colour-primary:#3C3C3C;
 $colour-navlink:#ffffff;
 $colour-secondary:#9CCCDD;
-//Fonts
-$font-h1:'Cormorant Garamond';
-$font-h2:'Montserrat';
-$font-h3:'Montserrat';
-$font-navlink:'Playfair Display';
+
+//Typography
+
+$font-h1:'Cormorant Garamond Bold', serif;
+$font-h2:'Montserrat', sans-serif;
+$font-h3:'Montserrat', sans-serif;
+$font-navlink:'Playfair Display' , serif;
 $font-p: 'Open Sans', sans-serif;
-
-
-
-

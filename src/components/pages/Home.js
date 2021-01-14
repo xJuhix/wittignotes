@@ -1,11 +1,17 @@
 import React from "react";
 import Heading from "../layout/Heading";
+import { Jumbotron, Container } from "react-bootstrap";
 
 
 export function Home() {
 	return (
 		<>
-			<Heading title="RAWG Viedo articles" />
+		<Jumbotron>
+			<Container>
+				<Heading title="My opinions and views on Books, Economics and Productivity" />
+			</Container>	
+		</Jumbotron>
+
 		</>
 	);
 }

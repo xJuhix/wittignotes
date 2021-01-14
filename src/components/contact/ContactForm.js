@@ -2,8 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
+import {Form, Button} from "react-bootstrap";
 import ErrorMessage from "./ErrorMessage";
 
 
