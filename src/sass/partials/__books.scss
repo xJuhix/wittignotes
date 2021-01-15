@@ -1,10 +1,22 @@
 .books-Header{
     width: 100%;
     margin-top: 0;
+    background-color: $colour-secondary;
 }
 
-.books-Header p{
-    width: 700px;
+.books-Header h1{
+    padding-top: 3rem;
+}
+
+.about-Books{
     padding: 20px;
-    align-self: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 576px) {
+        padding: 7rem 2rem;
+        width: auto;
+    }
+    
 }

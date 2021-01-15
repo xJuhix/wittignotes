@@ -1,3 +1,8 @@
+.jumbotron{
+    margin-bottom: 0 !important;
+    margin: 0;
+}
+
 .jumbotron-Index {
     margin-left: 0px;
     margin-right: 0px;
@@ -12,8 +17,7 @@
     border-radius: 0;
     height:300px;
     width: 100% !important;
-    margin-bottom
-    : 0;
+    margin-bottom: 0rem;
 
     @media (min-width: 576px) {
         padding: 7rem 2rem;
