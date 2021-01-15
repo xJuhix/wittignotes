@@ -46,7 +46,6 @@ function Layout() {
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
-			<Container>
 				<Switch>
 					<Route path={["/", "/home"]} exact component={Home} />
 					<Route path="/books" component={Books} />
@@ -56,7 +55,6 @@ function Layout() {
 					<Route path="/article" component={ArticleList} />
 					<Route path="/article/:id" component={ArticleDetail} />
 				</Switch>
-			</Container>
 		</Router>
 	);
 }

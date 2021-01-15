@@ -20,7 +20,7 @@ export function Home() {
 		<h2>Meet Me</h2>
 
 		<Container className="about-Text">		
-		<Row>
+		<Row className="row-Intro">
 			<Col sm={5} className="intro-Image">
 				<img src={Felix} alt="Felix Wittig" width="400"
 				height="300"/>
@@ -33,10 +33,6 @@ export function Home() {
 				</p>
 			</Col>
 		</Row>
-		</Container>
-
-		<Container className="recent-Articles">
-			
 		</Container>
 		</>
 	);
