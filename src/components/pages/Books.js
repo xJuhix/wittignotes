@@ -3,6 +3,7 @@ import Heading from "../layout/Heading";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import booksbanner from "../images/booksbanner.jpg";
 
 
 
@@ -10,7 +11,7 @@ import Row from "react-bootstrap/Row";
 export function Books() {
 	return (
 		<>
-			<Jumbotron className="jumbotron-Books" style={{ backgroundImage: "url(images/booksbanner.jpg)" }}>
+			<Jumbotron className="jumbotron-Books" style={ {backgroundImage: `url(${booksbanner})`}}>
         	</Jumbotron>
 		<div className="books-Header">
         	<Heading title="Books" />
@@ -33,3 +34,4 @@ export function Books() {
 }
 
 export default Books;
+

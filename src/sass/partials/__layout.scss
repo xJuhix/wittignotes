@@ -26,7 +26,14 @@ body {
     
 }
 
-  
+.container-articles{
+    margin-top: 5rem;
+}
+
+.header-Content{
+    background-color: $colour-secondary;
+    padding: 20px;
+}
 .contact-container{
     padding: 1.5rem 3rem;
     margin-top: 3rem;

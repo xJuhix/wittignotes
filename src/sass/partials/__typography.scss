@@ -16,7 +16,9 @@ h1{
 h2{
     font-family: $font-h2;
     color: $colour-blue;
-    text-align: center;
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h3{
