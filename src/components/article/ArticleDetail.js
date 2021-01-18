@@ -40,8 +40,9 @@ function ArticleDetails() {
 				<p>{article.acf.category_}</p>
 				<p>{article.acf.date_}</p>
 			</Row> 
-			<Col> 
-				<p> {article.content.rendered} </p> 
+			<Col>
+				<p dangerouslySetInnerHTML={{__html: article.excerpt.rendered }}></p>
+				<p dangerouslySetInnerHTML={{__html: article.content.rendered}}></p> 
 			</Col> 
 		</Col> 
 		</> } 
