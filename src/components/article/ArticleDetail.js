@@ -8,11 +8,11 @@ import { BASE_URL } from "../../constants/api";
 
 
 function ArticleDetails() {
-	const [article, setArticle] = useState([]);    
+	const [article, setArticle] = useState({});    
 
     let { id } = useParams();
 
-	const url = BASE_URL + "?" + id;
+	const url = BASE_URL + "/" + id;
 
 	useEffect(() => {
 		fetch(url)
