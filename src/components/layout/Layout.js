@@ -43,7 +43,7 @@ function Layout() {
 						</NavLink>
 						<NavLink to="/article" className="nav-link">
 							Search
-						</NavLink>
+						</NavLink>   
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>

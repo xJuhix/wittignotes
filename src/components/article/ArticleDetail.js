@@ -11,7 +11,7 @@ function ArticleDetails() {
 
     let { id } = useParams();
 
-	const url = BASE_URL + "/" + id;
+	const url = BASE_URL + "?" + id;
 
 	useEffect(() => {
 		fetch(url)
@@ -35,7 +35,7 @@ function ArticleDetails() {
 						<p>{article.author}</p>
 						<p>{article.acf.readtime_}</p>
                         <p>{article.category}</p>
-                        <p>{article.date}</p>			
+                        <p>{article.acf.date}</p>			
 					</Row>
 					<Col>
 						<h2>{article.title.rendered}</h2>
