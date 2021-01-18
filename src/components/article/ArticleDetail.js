@@ -8,7 +8,7 @@ import { BASE_URL } from "../../constants/api";
 
 
 function ArticleDetails() {
-	const [article, setArticle] = useState({});    
+	const [article, setArticle] = useState(false);    
 
     let { id } = useParams();
 
@@ -25,27 +25,29 @@ function ArticleDetails() {
 
 	}, [url]);
 
-	return (
-		<>
-			<Heading title= {article.title.rendered} />
-				<Col>
-					<Col md={6} className="articleDetail-image">
-						<Image src={article.acf.image_} width="500" rounded />
-					</Col>
-                    <Row>
-						<p>{article.acf.author_}</p>
-						<p>{article.acf.readtime_}</p>
-                        <p>{article.acf.category_}</p>
-                        <p>{article.acf.date_}</p>			
-					</Row>
-					<Col>
-						<p>
-							{article.content.rendered}
-						</p>			
-					</Col>
-				</Col>
-		</>
-	);
+	return ( 
+		<> 
+		{article && 
+		<> 
+		<Heading title={article.title.rendered} /> 
+		<Col> 
+			<Col md={6} className="articleDetail-image"> 
+			<Image src={article.acf.image_.url} width="500" rounded />
+			</Col> 
+			<Row> 
+				<p>{article.acf.author_}</p> 
+				<p>{article.acf.readtime_}</p>
+				<p>{article.acf.category_}</p>
+				<p>{article.acf.date_}</p>
+			</Row> 
+			<Col> 
+				<p> {article.content.rendered} </p> 
+			</Col> 
+		</Col> 
+		</> } 
+
+		</> 
+	); 
 }
 
 export default ArticleDetails;

@@ -14,7 +14,7 @@ function ArticleItem({ image_, title, excerpt, readtime_, date_, author_, id }) 
                 <Card.Text> Read-time: {readtime_} </Card.Text>
                 <Card.Text> {date_} </Card.Text>
 				<Card.Text> {author_} </Card.Text>
-				<Link to={"article/" + id}>
+				<Link to={"/article/" + id}>
 					<Button variant="secondary" block>
 						Read Article
 					</Button>
