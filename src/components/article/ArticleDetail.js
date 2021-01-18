@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import { BASE_URL } from "../../constants/api";
 
+
 function ArticleDetails() {
 	const [article, setArticle] = useState([]);    
 
@@ -29,16 +30,15 @@ function ArticleDetails() {
 			<Heading title={article.title.rendered} />
 				<Col>
 					<Col md={6} className="articleDetail-image">
-						<Image src={article.featured_media} width="500" rounded />
+						<Image src={article.acf.image_} width="500" rounded />
 					</Col>
                     <Row>
-						<p>{article.author}</p>
+						<p>{article.acf.author_}</p>
 						<p>{article.acf.readtime_}</p>
-                        <p>{article.category}</p>
-                        <p>{article.acf.date}</p>			
+                        <p>{article.acf.category_}</p>
+                        <p>{article.acf.date_}</p>			
 					</Row>
 					<Col>
-						<h2>{article.title.rendered}</h2>
 						<p>
 							{article.content.rendered}
 						</p>			

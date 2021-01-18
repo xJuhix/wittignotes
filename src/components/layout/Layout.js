@@ -16,7 +16,7 @@ function Layout() {
 		<Router>
 			<Navbar expand="lg">
 				<NavLink to="/" exact>
-					<Navbar.Brand href="#home">
+					<Navbar.Brand>
 						<img
 							src={logo}
 							width="300"
@@ -41,7 +41,7 @@ function Layout() {
 						<NavLink to="/contact" className="nav-link">
 							Contact
 						</NavLink>
-						<NavLink to="/article" className="nav-link">
+						<NavLink to="/search" className="nav-link">
 							Search
 						</NavLink>   
 					</Nav>
@@ -53,7 +53,7 @@ function Layout() {
 					<Route path="/economics" component={Economics} />
 					<Route path="/productivity" component={Productivity} />
 					<Route path="/contact" component={Contact} />
-					<Route path="/article" component={ArticleList} />
+					<Route path="/search" component={ArticleList} />
 					<Route path="/article/:id" component={ArticleDetail} />
 				</Switch>
 		</Router>

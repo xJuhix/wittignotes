@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
-function ArticleItem({ image, title, excerpt, readtime_, date, author, id }) {
+function ArticleItem({ image_, title, excerpt, readtime_, date_, author_, id }) {
 	return (
 		<Card>
-			<Card.Img variant="top" src={image} />
+			<Card.Img variant="top" src={image_} />
 			<Card.Body>
 				<Card.Title>{title}</Card.Title>
 				<Card.Text dangerouslySetInnerHTML={{__html: excerpt }}></Card.Text>
                 <Card.Text> Read-time: {readtime_} </Card.Text>
-                <Card.Text> {date} </Card.Text>
-				<Card.Text> {author} </Card.Text>
+                <Card.Text> {date_} </Card.Text>
+				<Card.Text> {author_} </Card.Text>
 				<Link to={"article/" + id}>
 					<Button variant="secondary" block>
 						Read Article
@@ -25,13 +25,14 @@ function ArticleItem({ image, title, excerpt, readtime_, date, author, id }) {
 }
 
 ArticleItem.propTypes = {
-    image: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    excerpt: PropTypes.string.isRequired,
-    readtime_: PropTypes.string.isRequired,
-	date: PropTypes.string.isRequired,
-	author: PropTypes.string.isRequired,
-	id: PropTypes.number.isRequired
+	id: PropTypes.number.isRequired,
+	title: PropTypes.string.isRequired,
+	excerpt: PropTypes.string.isRequired,
+    image_: PropTypes.string.isRequired,
+	readtime_: PropTypes.string.isRequired,
+	category_: PropTypes.string.isRequired,
+	date_: PropTypes.string.isRequired,
+	author_: PropTypes.string.isRequired,
 	
 };
 
