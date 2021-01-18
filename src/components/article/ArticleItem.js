@@ -12,7 +12,7 @@ function ArticleItem({ featured_image, title, excerpt, readtime, date, id }) {
 				<Card.Title>{title}</Card.Title>
                 <Card.Text>{excerpt} </Card.Text>
                 <Card.Text> Read-time: {readtime} </Card.Text>
-                <Card.Text> {date} </Card.Text>v
+                <Card.Text> {date} </Card.Text>
 				<Link to={"article/" + id}>
 					<Button variant="secondary" block>
 						Read Article

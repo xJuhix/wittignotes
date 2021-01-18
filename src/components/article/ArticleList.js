@@ -36,7 +36,7 @@ function AllArticles() {
             <Row>
                 {filtredArticles.map(article => (
                     <Col sm={6} md={3} key={article.id}>
-                        <ArticleItem id={article.id} date={article.date} author={article.author.rendered} title={article.title.rendered} excerpt={article.excerpt.rendered} article_image={article.wp:featuredmedia} read-time={article.acf.readtime} />
+                        <ArticleItem id={article.id} date={article.date} author={article.author.rendered} title={article.title.rendered} excerpt={article.excerpt.rendered} article_image={article.featured_media} read-time={article.acf.readtime} />
                     </Col>
                 ))}
             </Row>
