@@ -33,7 +33,7 @@ function ArticleDetails() {
 					</Col>
                     <Row>
 						<p>{article.author}</p>
-						<p>{article.acf.readtime}</p>
+						<p>{article.acf.readtime_}</p>
                         <p>{article.category}</p>
                         <p>{article.date}</p>			
 					</Row>

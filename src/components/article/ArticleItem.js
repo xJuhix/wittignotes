@@ -4,15 +4,16 @@ import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
-function ArticleItem({ featured_image, title, excerpt, readtime, date, id }) {
+function ArticleItem({ image, title, excerpt, readtime_, date, author, id }) {
 	return (
 		<Card>
-			<Card.Img variant="top" src={featured_image} />
+			<Card.Img variant="top" src={image} />
 			<Card.Body>
 				<Card.Title>{title}</Card.Title>
-                <Card.Text>{excerpt} </Card.Text>
-                <Card.Text> Read-time: {readtime} </Card.Text>
+				<Card.Text dangerouslySetInnerHTML={{__html: excerpt }}></Card.Text>
+                <Card.Text> Read-time: {readtime_} </Card.Text>
                 <Card.Text> {date} </Card.Text>
+				<Card.Text> {author} </Card.Text>
 				<Link to={"article/" + id}>
 					<Button variant="secondary" block>
 						Read Article
@@ -24,11 +25,12 @@ function ArticleItem({ featured_image, title, excerpt, readtime, date, id }) {
 }
 
 ArticleItem.propTypes = {
-    featured_media: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     excerpt: PropTypes.string.isRequired,
-    readtime: PropTypes.number.isRequired,
-    date: PropTypes.string.isRequired,
+    readtime_: PropTypes.string.isRequired,
+	date: PropTypes.string.isRequired,
+	author: PropTypes.string.isRequired,
 	id: PropTypes.number.isRequired
 	
 };
