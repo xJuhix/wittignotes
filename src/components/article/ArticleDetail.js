@@ -27,7 +27,7 @@ function ArticleDetails() {
 
 	return (
 		<>
-			<Heading title={article.title.rendered} />
+			<Heading title= {article.title.rendered} />
 				<Col>
 					<Col md={6} className="articleDetail-image">
 						<Image src={article.acf.image_} width="500" rounded />
