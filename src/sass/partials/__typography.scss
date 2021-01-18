@@ -8,6 +8,7 @@ $font-p: 'Open Sans', sans-serif;
 
 
 h1{
+    font-size: 4rem !important;
     font-family: $font-h1;
     text-align: center;
     color: $colour-heading;
@@ -24,13 +25,20 @@ h2{
 h3{
     font-family: $font-h3;
 }
-
-p{
-    font-family: $font-p;
-}
-
 .nav-link{
     font-family: $font-navlink;
     color: $colour-secondary;
     font-size: 22px;
 }
+
+p{
+    font-family: $font-p;
+}
+
+q{
+    font-family: $font-navlink;
+    font-size: 32px;
+    text-align: center;
+   
+}
+

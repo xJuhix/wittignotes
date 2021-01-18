@@ -2,7 +2,7 @@ import React from "react";
 import Heading from "../layout/Heading";
 import ArticleList from "../article/ArticleList";
 
-export function Search() {
+export function AllArticles() {
 	return (
 		<>
             <Heading title="Search Articles"/>
@@ -11,4 +11,4 @@ export function Search() {
 	);
 }
 
-export default Search;
+export default AllArticles;

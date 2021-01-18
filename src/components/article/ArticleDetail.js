@@ -26,24 +26,21 @@ function ArticleDetails() {
 
 	return (
 		<>
-			<Heading title={article.title} />
+			<Heading title={article.title.rendered} />
 				<Col>
 					<Col md={6} className="articleDetail-image">
-						<Image src={article.background_image} width="500" rounded />
+						<Image src={article.featured_image} width="500" rounded />
 					</Col>
                     <Row>
 						<p>{article.author}</p>
-						<p>{article.readtime}</p>
+						<p>{article.acf.readtime}</p>
                         <p>{article.category}</p>
                         <p>{article.date}</p>			
 					</Row>
 					<Col>
-						<h2>{article.name}</h2>
+						<h2>{article.title.rendered}</h2>
 						<p>
-							<b>Description:</b>  
-						</p>
-						<p>
-							{article.description_raw}
+							{article.content.rendered}
 						</p>			
 					</Col>
 				</Col>

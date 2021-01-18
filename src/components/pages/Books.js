@@ -11,10 +11,14 @@ import booksbanner from "../images/booksbanner.jpg";
 export function Books() {
 	return (
 		<>
-			<Jumbotron className="jumbotron-Books" style={ {backgroundImage: `url(${booksbanner})`}}>
-        	</Jumbotron>
+		<Jumbotron className="jumbotron-Books" style={ {backgroundImage: `url(${booksbanner})`}}>
+        </Jumbotron>
 		<div className="books-Header">
         	<Heading title="Books" />
+			<blockquote class="blockquote text-center">
+				<q class="mb-0">All knowledge is worth having</q>
+				<footer class="blockquote-footer">Jacqueline Carey</footer>
+			</blockquote>
 			<div className="about-Books">
 				<p>
 					Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend finibus et ac orci. Aliquam metus massa,
@@ -27,7 +31,6 @@ export function Books() {
 			<Row>
 				<h2>Book Articles</h2>
 			</Row>
-
 		</Container>
 		</>
 	);
