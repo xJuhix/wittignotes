@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BASE_URL, BOOK_URL } from "../../constants/api";
+import { BOOK_URL } from "../../constants/api";
 import ArticleItem from "./ArticleItem";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -23,9 +23,9 @@ function BookArticles() {
     return (
 		<> 
             <Row>
-            {article.map(item => {
-                    <Col sm={6} md={3} key={article.id}>
-                        <ArticleItem id={article.id} date_={article.acf.date_} author_={article.acf.author_} category_={article.acf.category_} title={article.title.rendered} excerpt={article.excerpt.rendered} image_={article.acf.image_ } readtime_={article.acf.readtime_} />
+            {articles.map(item => {
+                    <Col sm={6} md={3} key={item.id}>
+                        <ArticleItem id={item.id} date_={item.acf.date_} author_={item.acf.author_} category_={item.acf.category_} title={item.title.rendered} excerpt={item.excerpt.rendered} image_={item.acf.image_ } readtime_={item.acf.readtime_} />
                     </Col>
                 }
             )}
