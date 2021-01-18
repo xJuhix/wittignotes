@@ -29,7 +29,7 @@ function ArticleDetails() {
 			<Heading title={article.title.rendered} />
 				<Col>
 					<Col md={6} className="articleDetail-image">
-						<Image src={article.featured_image} width="500" rounded />
+						<Image src={article.featured_media} width="500" rounded />
 					</Col>
                     <Row>
 						<p>{article.author}</p>

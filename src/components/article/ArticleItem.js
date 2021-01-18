@@ -24,11 +24,11 @@ function ArticleItem({ featured_image, title, excerpt, readtime, date, id }) {
 }
 
 ArticleItem.propTypes = {
-    featured_image: PropTypes.string.isRequired,
+    featured_media: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     excerpt: PropTypes.string.isRequired,
     readtime: PropTypes.number.isRequired,
-    date: PropTypes.number.isRequired,
+    date: PropTypes.string.isRequired,
 	id: PropTypes.number.isRequired
 	
 };
