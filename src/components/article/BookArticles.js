@@ -30,8 +30,10 @@ function BookArticles() {
                     </Col>
                 ))}
             </Row>
+        </>}
         </>
     );
 }
 
-export default AllArticles;
+
+export default BookArticles;
