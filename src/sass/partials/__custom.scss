@@ -1,11 +1,11 @@
 // custom
 
-$colour-headerfooter:#6E737E;
-$colour-background:#868D97;
+$colour-headerfooter:#53585e;
+$colour-background:#868d97;
 $colour-heading:#000000;
 $colour-primary:#3C3C3C;
 $colour-secondary:#ffffff;
-$colour-blue:#9CCCDD;
+$colour-blue:#74D0F1;
 
 
 $colour-input: #3C3C3C;
@@ -31,8 +31,8 @@ $input-plaintext-color: $colour-primary;
 $body-bg:$colour-background;
 
 
-$card-bg: transparent;
-$card-cap-bg: white;
+$card-bg: $colour-secondary;
+$card-cap-bg: black;
 
 
 
