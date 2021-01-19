@@ -23,10 +23,10 @@ function BookArticles() {
     return (
 		<> 
             <Row>
-            {articles.map(item => {
+            {articles.map(book => {
                 <>
-                    <Col sm={6} md={3} key={item.id}>
-                        <ArticleItem id={item.id} date_={item.acf.date_} author_={item.acf.author_} category_={item.acf.category_} title={item.title.rendered} excerpt={item.excerpt.rendered} image_={item.acf.image_ } readtime_={item.acf.readtime_} />
+                    <Col sm={6} md={3} key={book.id}>
+                        <ArticleItem id={book.id} date_={book.acf.date_} author_={book.acf.author_} category_={book.acf.category_} title={book.title.rendered} excerpt={book.excerpt.rendered} image_={book.acf.image_ } readtime_={book.acf.readtime_} />
                     </Col>
                 </>
                 }

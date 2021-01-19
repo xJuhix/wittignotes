@@ -36,7 +36,7 @@ function AllArticles() {
             <Row>
                 {filtredArticles.map(article => (
                     <Col sm={6} md={3} key={article.id}>
-                        <ArticleItem id={article.id} date_={article.acf.date_} author_={article.acf.author_} category_={article.acf.category_} title={article.title.rendered} excerpt={article.excerpt.rendered} image_={article.acf.image_ } readtime_={article.acf.readtime_} />
+                        <ArticleItem id={article.id} date_={article.acf.date_} author_={article.acf.author_} category_={article.acf.category_} title={article.title.rendered} excerpt={article.excerpt.rendered} image_={article.acf.image_.url } readtime_={article.acf.readtime_} />
                     </Col>
                 ))}
             </Row>
