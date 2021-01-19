@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Felix from "../images/fw.png";
+import RecentArticles from "../article/RecentArticles";
 
 
 
@@ -33,6 +34,15 @@ export function Home() {
 				</p>
 			</Col>
 		</Row>
+		</Container>
+
+		<Container className="container-articles">
+			<Row>
+				<h2>RecentArticles Articles</h2>
+			</Row>
+            
+            <RecentArticles/>
+
 		</Container>
 		</>
 	);

@@ -3,6 +3,8 @@ import Heading from "../layout/Heading";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import EconomicsArticles from "../article/EconomicsArticles";
+
 
 export function Economics() {
 	return (
@@ -34,6 +36,8 @@ export function Economics() {
 			<Row>
 				<h2>Economics Articles</h2>
 			</Row>
+            
+            <EconomicsArticles/>
 
 		</Container>
 		</>

@@ -3,6 +3,7 @@ import Heading from "../layout/Heading";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import ProductivityArticles from "../article/ProductivityArticles"
 
 export function Productivity() {
 	return (
@@ -30,7 +31,7 @@ export function Productivity() {
 			<Row>
 				<h2>Productivity Articles</h2>
 			</Row>
-
+			<ProductivityArticles/>
 		</Container>
 		</>
 	);
