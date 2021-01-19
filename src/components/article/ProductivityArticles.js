@@ -24,11 +24,11 @@ function ProductivityArticles() {
 		<> 
             <Row>
             {articles.map(productivity => (
-                <>
-                    <Col sm={6} md={3} key={productivity.id}>
+                <div key={productivity.id}> 
+                    <Col sm={6} md={3}>
                         <ArticleItem id={productivity.id} date_={productivity.acf.date_} author_={productivity.acf.author_} category_={productivity.acf.category_} title={productivity.title.rendered} excerpt={productivity.excerpt.rendered} image_={productivity.acf.image_.url } readtime_={productivity.acf.readtime_} />
                     </Col>
-                </>
+                </div>
             ))}
             </Row>
         </>

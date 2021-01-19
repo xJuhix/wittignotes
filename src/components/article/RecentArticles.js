@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 
+
 function RecentArticles() {
     const [articles, setRecentArticles] = useState([]);
     const url = RECENTARTICLES_URL;
@@ -24,11 +25,11 @@ function RecentArticles() {
 		<> 
             <Row>
             {articles.map(recent => (
-                <>
-                    <Col sm={6} md={3} key={recent.id}>
-                        <RecentArticleItem id={recent.id} date_={recent.acf.date_} category_={recent.acf.category_} title={recent.title.rendered} />
+                <div  key={recent.id}> 
+                    <Col sm={6} md={3} >
+                        <RecentArticleItem id={recent.id} date={recent.acf.date} category={recent.acf.category} title={recent.title.rendered} /> 
                     </Col>
-                </>
+                </div>
             ))}
             </Row>
         </>

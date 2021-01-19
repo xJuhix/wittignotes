@@ -24,11 +24,11 @@ function BookArticles() {
 		<> 
             <Row>
             {articles.map(book => (
-                <>
-                    <Col sm={6} md={3} key={book.id}>
+                <div key={book.id}>
+                    <Col sm={6} md={3}>
                         <ArticleItem id={book.id} date_={book.acf.date_} author_={book.acf.author_} category_={book.acf.category_} title={book.title.rendered} excerpt={book.excerpt.rendered} image_={book.acf.image_.url } readtime_={book.acf.readtime_} />
                     </Col>
-                </>
+                </div>
             ))}
             </Row>
         </>
