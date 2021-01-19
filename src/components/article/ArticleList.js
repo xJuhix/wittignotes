@@ -25,7 +25,7 @@ function AllArticles() {
         console.log(event.target.value)
         const searchText = event.target.value.toLowerCase();
         const filteredArray = articles.filter(article => {
-            return article.title.toLowerCase().includes(searchText)
+            return article.title.rendered.toLowerCase().includes(searchText)
         })
         setFilteredArticles(filteredArray);
     }
