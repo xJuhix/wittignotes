@@ -17,9 +17,9 @@ export function Books() {
         </Jumbotron>
 		<div className="books-Header">
         	<Heading title="Books" />
-			<blockquote class="blockquote text-center">
-				<q class="mb-0">All knowledge is worth having</q>
-				<footer class="blockquote-footer">Jacqueline Carey</footer>
+			<blockquote className="blockquote text-center">
+				<q className="mb-0">All knowledge is worth having</q>
+				<footer className="blockquote-footer">Jacqueline Carey</footer>
 			</blockquote>
 			<div className="about-Books">
 				<p>

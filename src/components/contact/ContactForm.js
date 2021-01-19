@@ -74,7 +74,7 @@ function ContactForm() {
             </Form.Group>
 
 
-            <Button variant="send" size="lg" bloc type="submit">Send</Button>     
+            <Button variant="send" size="lg" type="submit">Send</Button>     
         </Form>
         
     );

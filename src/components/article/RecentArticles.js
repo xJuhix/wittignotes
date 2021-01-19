@@ -27,7 +27,7 @@ function RecentArticles() {
             {articles.map(recent => (
                 <div  key={recent.id}> 
                     <Col sm={6} md={3} >
-                        <RecentArticleItem id={recent.id} date={recent.acf.date} category={recent.acf.category} title={recent.title.rendered} /> 
+                        <RecentArticleItem id={recent.id} date_={recent.acf.date_} category_={recent.acf.category_} title={recent.title.rendered} /> 
                     </Col>
                 </div>
             ))}
