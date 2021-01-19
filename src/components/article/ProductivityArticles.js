@@ -23,14 +23,13 @@ function ProductivityArticles() {
     return (
 		<> 
             <Row>
-            {articles.map(productivity => {
+            {articles.map(productivity => (
                 <>
                     <Col sm={6} md={3} key={productivity.id}>
-                        <ArticleItem id={productivity.id} date_={productivity.acf.date_} author_={productivity.acf.author_} category_={productivity.acf.category_} title={productivity.title.rendered} excerpt={productivity.excerpt.rendered} image_={productivity.acf.image_ } readtime_={productivity.acf.readtime_} />
+                        <ArticleItem id={productivity.id} date_={productivity.acf.date_} author_={productivity.acf.author_} category_={productivity.acf.category_} title={productivity.title.rendered} excerpt={productivity.excerpt.rendered} image_={productivity.acf.image_.url } readtime_={productivity.acf.readtime_} />
                     </Col>
                 </>
-                }
-            )}
+            ))}
             </Row>
         </>
     );

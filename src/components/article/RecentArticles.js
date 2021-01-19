@@ -23,14 +23,13 @@ function RecentArticles() {
     return (
 		<> 
             <Row>
-            {articles.map(recent => {
+            {articles.map(recent => (
                 <>
                     <Col sm={6} md={3} key={recent.id}>
                         <RecentArticleItem id={recent.id} date_={recent.acf.date_} category_={recent.acf.category_} title={recent.title.rendered} />
                     </Col>
                 </>
-                }
-            )}
+            ))}
             </Row>
         </>
     );
