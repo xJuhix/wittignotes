@@ -6,19 +6,17 @@ import Col from "react-bootstrap/Col";
 
 function RecentArticleItem({ title, date_, category_, id }) {
 	return (
-		<div>
+		<>
 			<div className="RecentArticleCard">
             <Col>
 				<Link to={"/article/" + id}>
 					<Row>
-						<h3>{title}</h3>
-						<p>{category_}</p>
-						<p> {date_} </p>
+						<p>{title}, {category_}, {date_} </p>
 					</Row>
 				</Link>
             </Col>
 			</div>
-		</div>
+		</>
 	);
 }
 

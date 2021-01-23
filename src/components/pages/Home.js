@@ -39,11 +39,9 @@ export function Home() {
 
 		<h2>Recent Articles</h2>
 			
-		<Container className="recentarticles">
+		<Container fluid className="recentarticles">
 			
-            <Col>
-				<RecentArticles/>
-			</Col>
+			<RecentArticles/>
 
 		</Container>
 		

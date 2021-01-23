@@ -1,6 +1,6 @@
 .about {
     margin-top: 7rem;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     width: 90%;
 
     .row{
@@ -41,5 +41,16 @@
 
 .recentarticles{
     background-color: $colour-secondary;
+    padding: 10px; 
+    width: auto;
+
+    .RecentArticleCard{
+        font-size: 26px;
+        color: black;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
 }
+
+
 
