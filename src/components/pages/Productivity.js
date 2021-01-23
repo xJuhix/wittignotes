@@ -3,7 +3,8 @@ import Heading from "../layout/Heading";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import ProductivityArticles from "../article/ProductivityArticles"
+import ProductivityArticles from "../article/ProductivityArticles";
+import Footer from "../layout/Footer";
 
 export function Productivity() {
 	return (
@@ -33,6 +34,7 @@ export function Productivity() {
 			</Row>
 			<ProductivityArticles/>
 		</Container>
+		<Footer/>
 		</>
 	);
 }

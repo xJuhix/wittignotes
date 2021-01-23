@@ -4,7 +4,8 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import booksbanner from "../images/booksbanner.jpg";
-import BookArticles from "../article/BookArticles"
+import BookArticles from "../article/BookArticles";
+import Footer from "../layout/Footer";
 
 
 
@@ -35,6 +36,7 @@ export function Books() {
 			</Row>
 			<BookArticles/>
 		</Container>
+		<Footer/>
 		</>
 	);
 }

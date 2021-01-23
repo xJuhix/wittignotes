@@ -7,7 +7,7 @@ import Books from "../pages/Books";
 import Economics from "../pages/Economics";
 import Productivity from "../pages/Productivity";
 import Contact from "../pages/Contact";
-import ArticleList from "../article/ArticleList";
+import Search from "../pages/Search";
 import ArticleDetail from "../article/ArticleDetail";
 import logo from "../images/logo.png";
 
@@ -53,7 +53,7 @@ function Layout() {
 					<Route path="/economics" component={Economics} />
 					<Route path="/productivity" component={Productivity} />
 					<Route path="/contact" component={Contact} />
-					<Route path="/search" component={ArticleList} />
+					<Route path="/search" component={Search} />
 					<Route path="/article/:id" component={ArticleDetail} />
 				</Switch>
 		</Router>

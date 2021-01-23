@@ -1,21 +1,21 @@
 //Typography
 
 $font-h1:'Cormorant Garamond Bold', serif;
-$font-h2:'Montserrat Medium', sans-serif;
+$font-h2:'Montserrat Bold', sans-serif;
 $font-h3:'Montserrat', sans-serif;
 $font-navlink:'Playfair Display' , serif;
 $font-p: 'Open Sans', sans-serif;
 
 
 h1{
-    font-size: 4rem !important;
+    font-size: 5rem !important;
     font-family: $font-h1;
     text-align: center;
     color: $colour-heading;
 }
 
 h2{
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
     font-family: $font-h2;
     color: $colour-blue;
     text-align: center !important;

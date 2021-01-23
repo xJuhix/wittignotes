@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "../layout/Heading";
 import ContactForm from "../contact/ContactForm";
 import Container from "react-bootstrap/Container";
+import Footer from "../layout/Footer";
 
 export function Contact() {
 	return (
@@ -10,6 +11,7 @@ export function Contact() {
             <Heading title="Contact Me" />
 			<ContactForm />
 		</Container>
+		<Footer/>
 		</>
 	);
 }

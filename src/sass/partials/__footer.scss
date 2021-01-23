@@ -1,0 +1,18 @@
+.footer{
+    background-color: $colour-headerfooter;
+    color: $colour-secondary;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.socaialLinks a{
+    padding: 10px;
+
+    @media (max-width: 576px) {
+        padding: 3px;
+    }
+}
+svg{
+    color: $colour-secondary;
+}
+

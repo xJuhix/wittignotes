@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import { BASE_URL } from "../../constants/api";
+import Footer from "../layout/Footer";
 
 
 function ArticleDetails() {
@@ -27,28 +28,33 @@ function ArticleDetails() {
 
 	return ( 
 		<> 
-		{article && 
-		<> 
-		<Heading title={article.title.rendered} /> 
-		<Col> 
-			<Col md={6} className="articleDetail-image"> 
-			<Image src={article.acf.image_.url} width="500" rounded />
+			{article && 
+			<> 
+			<Heading title={article.title.rendered} /> 
+			<Col> 
+				<Col md={6} className="articleDetail-image"> 
+				<Image src={article.acf.image_.url} width="500" rounded />
+				</Col> 
+				<Row> 
+					<p>{article.acf.author_}</p> 
+					<p>{article.acf.readtime_}</p>
+					<p>{article.acf.category_}</p>
+					<p>{article.acf.date_}</p>
+				</Row> 
+				<Col>
+					<p dangerouslySetInnerHTML={{__html: article.excerpt.rendered }}></p>
+					<p dangerouslySetInnerHTML={{__html: article.content.rendered}}></p> 
+				</Col> 
 			</Col> 
-			<Row> 
-				<p>{article.acf.author_}</p> 
-				<p>{article.acf.readtime_}</p>
-				<p>{article.acf.category_}</p>
-				<p>{article.acf.date_}</p>
-			</Row> 
-			<Col>
-				<p dangerouslySetInnerHTML={{__html: article.excerpt.rendered }}></p>
-				<p dangerouslySetInnerHTML={{__html: article.content.rendered}}></p> 
-			</Col> 
-		</Col> 
-		</> } 
-
+			</> 
+			}
+		<>
+			<Footer/>
 		</> 
-	); 
+		</>
+		
+	);
+	 
 }
 
 export default ArticleDetails;

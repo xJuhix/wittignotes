@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import EconomicsArticles from "../article/EconomicsArticles";
+import Footer from "../layout/Footer";
 
 
 export function Economics() {
@@ -40,6 +41,7 @@ export function Economics() {
             <EconomicsArticles/>
 
 		</Container>
+        <Footer/>
 		</>
 	);
 }
