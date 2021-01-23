@@ -7,6 +7,12 @@ body {
     background: $colour-headerfooter;
 }
 
+.navbar-toggler .collapsed{
+    color: $colour-secondary;
+}
+
+
+
 .navbar-brand{
     margin-right: 3rem;
 }
