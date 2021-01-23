@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import { BASE_URL } from "../../constants/api";
+import { FaClock, FaUser, FaCalendarDay, FaFolder} from "react-icons/fa";
 import Footer from "../layout/Footer";
 
 
@@ -36,10 +37,10 @@ function ArticleDetails() {
 				<Image src={article.acf.image_.url} width="500" rounded />
 				</Col> 
 				<Row> 
-					<p>{article.acf.author_}</p> 
-					<p>{article.acf.readtime_}</p>
-					<p>{article.acf.category_}</p>
-					<p>{article.acf.date_}</p>
+					<p><span><FaUser size="1rem"/></span>{article.acf.author_}</p> 
+					<p><span><FaClock size="1rem"/></span>{article.acf.readtime_}</p>
+					<p><span><FaFolder size="1rem"/></span>{article.acf.category_}</p>
+					<p><span><FaCalendarDay size="1rem"/></span>{article.acf.date_}</p>
 				</Row> 
 				<Col>
 					<p dangerouslySetInnerHTML={{__html: article.excerpt.rendered }}></p>
