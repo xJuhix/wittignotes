@@ -9,13 +9,13 @@ function RecentArticleItem({ title, date_, category_, id }) {
 		<div>
 			<div className="RecentArticleCard">
             <Col>
-            <Link to={"/article/" + id}>
-                <Row>
-                    <h3>{title}</h3>
-                    <p>{category_}</p>
-                    <p> {date_} </p>
-				</Row>
-			</Link>
+				<Link to={"/article/" + id}>
+					<Row>
+						<h3>{title}</h3>
+						<p>{category_}</p>
+						<p> {date_} </p>
+					</Row>
+				</Link>
             </Col>
 			</div>
 		</div>

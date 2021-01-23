@@ -1,19 +1,45 @@
-.about-Text{
-    margin-top: 3rem;
+.about {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    width: 90%;
+
+    .row{
+        background-color: $colour-secondary;
+        height: 300px;
+    }
+
+    .about-image{
+        margin-left: 0 !important;
+        width: 300px;
+        padding:0;
+
+        #photo{
+            position: relative;
+            bottom: 90px;
+            height: 450px;
+            right: 50px;
+        }
+    }
+
+    .about-text{
+        padding: 35px;
+        right: 45px;
+        
+
+        h3{
+            font-size: 32px !important;
+            text-align: center;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+       
+    }
 }
 
-.row-Intro{
-    margin-top: 5rem;
-    background-color: $colour-blue;
-    height: 70px;
+.recentarticles{
+    background-color: $colour-secondary;
 }
 
-.intro-Image{
-    width: 100%;
-	
-}
-
-.intro-Text{
-    width: 150px;
-    margin-top: 70px;
-}
