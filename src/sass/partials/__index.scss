@@ -66,12 +66,12 @@
     background-color: $colour-secondary;
     padding: 10px; 
     width: auto;
+    justify-content: center;
 
     .RecentArticleCard{
         font-size: 26px;
         color: black;
-        margin-left: 40%;
-        margin-right: 40%;
+        
     }
 }
 
