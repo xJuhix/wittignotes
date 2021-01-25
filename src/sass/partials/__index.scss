@@ -4,22 +4,34 @@
     width: 90%;
     background-color: $colour-secondary;
 
+        @media (min-width: 760px) {
+            margin-top: 3rem;
+        }
+
     .row{
         height: 300px;
 
-        @media (max-width: 576px) {
+        @media (min-width: 760px) {
             height: auto;
         }
     }
 
     .about-image{
-        align-items: center;
+        justify-content: center;
         
         #photo{
             position: relative;
             bottom: 90px;
             height: 450px;
             right: 50px;
+
+            @media (min-width: 760px) {
+                bottom: 0;
+                height: 400px;
+                margin-top: 10px;
+                width: 450px;
+                left: 120px;
+            }
 
             @media (max-width: 576px) {
                 bottom: 0;
@@ -28,9 +40,7 @@
                 width: 350px;
                 left: 20px;
             }
-
         }
-
     }
 
     .about-text{
