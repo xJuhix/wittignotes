@@ -13,7 +13,7 @@
     }
 
     .about-image{
-        justify-content: center;
+        align-items: center;
         
         #photo{
             position: relative;
@@ -22,12 +22,11 @@
             right: 50px;
 
             @media (max-width: 576px) {
-                position: relative;
                 bottom: 0;
                 height: 300px;
-                right: 20px;
-                align-items: center;
                 margin-top: 10px;
+                width: 350px;
+                left: 20px;
             }
 
         }
