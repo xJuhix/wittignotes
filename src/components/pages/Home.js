@@ -23,10 +23,10 @@ export function Home() {
 
 		<Container className="about">		
 		<Row>
-			<Col className="col about-image">
+			<Col sm={5} className="about-image">
 				<img src={Felix} id="photo" alt="Felix Wittig" />
 			</Col>
-			<Col className="about-text">
+			<Col sm={7} className="about-text">
 				<h3>Felix Wittig</h3>
 				<p>
 					Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend finibus et ac orci. Aliquam metus massa,

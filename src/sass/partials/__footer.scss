@@ -4,6 +4,12 @@ footer{
     width: 100%;
     justify-content: space-between;
 
+    .row{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     @media (max-width: 576px) {
         text-align: center;
     }
@@ -12,12 +18,16 @@ footer{
 
 .socaialLinks a{
     padding: 10px;
+    justify-content: end;
+
 
     @media (max-width: 576px) {
         padding: 3px;
         padding-top: 5px;
     }
 }
+
+
 footer svg{
     color: $colour-secondary;
 }

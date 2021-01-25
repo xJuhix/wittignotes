@@ -2,28 +2,40 @@
     margin-top: 7rem;
     margin-bottom: 7rem;
     width: 90%;
+    background-color: $colour-secondary;
 
     .row{
-        background-color: $colour-secondary;
         height: 300px;
+
+        @media (max-width: 576px) {
+            height: auto;
+        }
     }
 
     .about-image{
-        margin-left: 0 !important;
-        width: 300px;
-        padding:0;
-
+        justify-content: center;
+        
         #photo{
             position: relative;
             bottom: 90px;
             height: 450px;
             right: 50px;
+
+            @media (max-width: 576px) {
+                position: relative;
+                bottom: 0;
+                height: 300px;
+                right: 20px;
+                align-items: center;
+                margin-top: 10px;
+            }
+
         }
+
     }
 
     .about-text{
         padding: 35px;
-        right: 45px;
         
 
         h3{
@@ -37,6 +49,8 @@
 
        
     }
+
+    
 }
 
 .recentarticles{
