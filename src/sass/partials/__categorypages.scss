@@ -5,6 +5,9 @@
        margin-left: 5rem;
        margin-top: 5rem;
 
+       @media (max-width: 576) {
+            margin-left: 0;
+        }
 
        .blockquote{
         margin-top: 2rem;
@@ -18,15 +21,14 @@
             margin-top: 3rem;
             width:600px;
 
-            @media (min-width: 300px) and (max-width: 1080px) {
-                height: auto;
-                width: auto;
+            @media (max-width: 576) {
                 margin-left: 0;
+                width: auto;
             }
+    
         }
 
     }
-
 
     .cateogry-image{
         width: 100%;

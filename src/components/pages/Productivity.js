@@ -13,7 +13,7 @@ export function Productivity() {
 		<>
 		<Container fluid className="container-category">
             <Row>
-                <Col className="column-content">
+                <Col sm={4} className="column-content">
                     <Heading title="Productivity"/>
 					<p className="category-description">
 						Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend finibus et ac orci. Aliquam metus massa,
@@ -21,7 +21,7 @@ export function Productivity() {
 						eget massa.
 					</p>
                 </Col>
-				<Col className="column-image">
+				<Col sm={4} className="column-image">
 					<img src={ProductivityImg} className="cateogry-image" alt="Computer and plant" />
 				</Col>
             </Row>

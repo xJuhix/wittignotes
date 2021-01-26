@@ -16,7 +16,7 @@ export function Books() {
 		<>
 		<Container fluid className="container-category">
 			<Row>
-				<Col className="column-content">
+				<Col md={6} className="column-content">
 					<Heading title="Books" />
 					<blockquote className="blockquote">
 						<q className="mb-0">All knowledge is worth having</q>
@@ -28,8 +28,8 @@ export function Books() {
 						eget massa.
 					</p>
 				</Col>
-				<Col className="column-image">
-					<img src={BookImg} className="cateogry-image" alt="Computer and plant" />
+				<Col md={6} className="column-image">
+					<img src={BookImg} className="cateogry-image" alt="Bookshelf and lamp" />
 				</Col>
 			</Row>
 		</Container>

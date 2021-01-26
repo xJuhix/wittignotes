@@ -13,7 +13,7 @@ export function Economics() {
 		<>
 		<Container fluid className="container-category">
             <Row>
-                <Col className="column-content">
+                <Col md={6} className="column-content">
                     <Heading title="Economics"/>
 					<p className="category-description">
 						Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend finibus et ac orci. Aliquam metus massa,
@@ -21,7 +21,7 @@ export function Economics() {
 						eget massa.
 					</p>
                 </Col>
-				<Col className="column-image">
+				<Col md={6} className="column-image">
 					<img src={Piggybank} className="cateogry-image" alt="Black piggybank on coins" />
 				</Col>
             </Row>
