@@ -1,4 +1,5 @@
 footer{
+    display: flex;
     background-color: $colour-headerfooter;
     color: $colour-secondary;
     width: 100%;
@@ -14,6 +15,10 @@ footer{
         text-align: center;
     }
 
+}
+
+.socaialLinks{
+    display: flex;
 }
 
 .socaialLinks a{
