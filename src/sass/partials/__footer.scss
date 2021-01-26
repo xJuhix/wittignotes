@@ -19,6 +19,11 @@ footer{
 
 .socaialLinks{
     display: flex;
+
+    @media (max-width: 576px) {
+        justify-content: center;
+    }
+
 }
 
 .socaialLinks a{
@@ -31,7 +36,6 @@ footer{
         padding-top: 5px;
     }
 }
-
 
 footer svg{
     color: $colour-secondary;

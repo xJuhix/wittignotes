@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { FaClock, FaUser, FaCalendarDay, FaFolder} from "react-icons/fa";
+import { FaClock, FaFolder} from "react-icons/fa";
 
-function ArticleItem({ image_, title, excerpt, readtime_, date_, author_, id, category_ }) {
+function ArticleItem({ image_, title, excerpt, readtime_, id, category_ }) {
 	return (
 		<Card>
 			<Card.Img variant="top" src={image_} />
@@ -13,9 +13,7 @@ function ArticleItem({ image_, title, excerpt, readtime_, date_, author_, id, ca
 				<Card.Title>{title}</Card.Title>
 				<Card.Text dangerouslySetInnerHTML={{__html: excerpt }}></Card.Text>
                 <Card.Text><span><FaClock size="1rem"/></span> Read-time: {readtime_} </Card.Text>
-                <Card.Text><span><FaCalendarDay size="1rem"/></span> {date_} </Card.Text>
 				<Card.Text><span><FaFolder size="1rem"/></span> {category_} </Card.Text>
-				<Card.Text><span><FaUser size="1rem"/></span> {author_} </Card.Text>
 				<Link to={"/article/" + id}>
 					<Button variant="secondary" block>
 						Read Article

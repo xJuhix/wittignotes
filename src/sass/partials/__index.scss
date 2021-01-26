@@ -11,26 +11,27 @@
     .row{
         height: 300px;
 
-        @media (max-width: 576px) {
+        @media (min-width: 300px) and (max-width: 1080px) {
             height: auto;
         }
     }
 
     .about-image{
+        display: flex;
         justify-content: center;
         
         #photo{
             position: relative;
             bottom: 90px;
             height: 450px;
-            right: 50px;
+            
 
             @media (min-width: 760px) and (max-width: 1080px){
                 bottom: 0;
                 height: 400px;
                 margin-top: 10px;
                 width: 450px;
-                left: 120px;
+               
             }
 
             @media (max-width: 576px) {
@@ -38,7 +39,7 @@
                 height: 300px;
                 margin-top: 10px;
                 width: 350px;
-                left: 20px;
+                
             }
         }
     }
@@ -63,11 +64,12 @@
 }
 
 .recentarticles{
+    display: flex;
     background-color: $colour-secondary;
     padding: 10px; 
-    width: auto;
     justify-content: center;
 
+    
     .RecentArticleCard{
         font-size: 26px;
         color: black;

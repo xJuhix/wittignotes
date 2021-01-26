@@ -24,9 +24,9 @@ function RecentArticles() {
 		<> 
             
             {articles.map(recent => ( 
-                    <Row sm={6} md={3} key={recent.id} >
-                        <RecentArticleItem id={recent.id} date_={recent.acf.date_} category_={recent.acf.category_} title={recent.title.rendered} /> 
-                    </Row>
+                <Row sm={6} md={3} key={recent.id} >
+                    <RecentArticleItem id={recent.id} date_={recent.acf.date_} category_={recent.acf.category_} title={recent.title.rendered} /> 
+                </Row>
             ))}
             
         </>
