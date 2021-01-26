@@ -62,13 +62,13 @@
 }
 
 .recentarticles{
-    display: flex;
     background-color: $colour-secondary;
     padding: 10px; 
-    justify-content: center;
 
     
     .RecentArticleCard{
+        display: flex;
+        align-items: center;
         font-size: 26px;
         color: black;
         
