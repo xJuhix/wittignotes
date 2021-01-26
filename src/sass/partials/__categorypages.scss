@@ -5,6 +5,11 @@
        margin-left: 5rem;
        margin-top: 5rem;
 
+
+       .blockquote{
+        margin-top: 2rem;
+       }
+
        .blockquote-footer{
             background-color: $colour-secondary;
         }
@@ -12,6 +17,12 @@
         .category-description{
             margin-top: 3rem;
             width:600px;
+
+            @media (min-width: 300px) and (max-width: 1080px) {
+                height: auto;
+                width: auto;
+                margin-left: 0;
+            }
         }
 
     }

@@ -1,24 +1,23 @@
-.btn-send{
-    margin-top: 35px;
-    background-color: $colour-primary;
-    color: $colour-secondary;
-    width: 100%;
-    border-radius: 0;
+.contact-container{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: auto;
 
-    &:hover {
-        background-color: $colour-blue;
-        color: $colour-secondary !important;
+    .btn-send{
+        margin-top: 35px;
+        background-color: $colour-primary;
+        color: $colour-secondary;
+        width: 100%;
+        border-radius: 0;
+    
+        &:hover {
+            background-color: $colour-blue;
+            color: $colour-secondary !important;
+        }
     }
+
 }
 
-.form-group {
-    margin-top: 2rem;
-}
 
-.form-search {
-    width: 100%;
-    @media (min-width: $medium-width) {
-        width: auto;
-    }
-}
+
 

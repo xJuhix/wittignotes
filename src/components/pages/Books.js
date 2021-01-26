@@ -27,7 +27,7 @@ export function Books() {
 						aliquam quis arcu sit amet, consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa euismod, pretium lacinia magna. Donec mi orci, sollicitudin in luctus a, varius
 						eget massa.
 					</p>
-					</Col>
+				</Col>
 				<Col className="column-image">
 					<img src={BookImg} className="cateogry-image" alt="Computer and plant" />
 				</Col>
