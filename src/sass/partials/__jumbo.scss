@@ -10,17 +10,3 @@
     width: 100% !important;
     border-radius: 0;
 }
-
-.jumbotron-Books{
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    border-radius: 0;
-    height:300px;
-    width: 100% !important;
-    margin-bottom: 0rem;
-
-    @media (min-width: 576px) {
-        padding: 7rem 2rem;
-    }
-}
