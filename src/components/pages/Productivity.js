@@ -13,7 +13,6 @@ export function Productivity() {
 		<>
 		<Container fluid className="container-category">
             <Row>
-				
                 <Col className="column-content">
                     <Heading title="Productivity"/>
 					<p className="category-description">

@@ -1,9 +1,9 @@
 import React from "react";
 import Heading from "../layout/Heading";
-import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import booksbanner from "../images/booksbanner.jpg";
+import Col from "react-bootstrap/Col";
+import BookImg from "../images/bookshelf.jpg";
 import BookArticles from "../article/BookArticles";
 import Footer from "../layout/Footer";
 
@@ -14,22 +14,25 @@ import Footer from "../layout/Footer";
 export function Books() {
 	return (
 		<>
-		<Jumbotron className="jumbotron-Books" style={ {backgroundImage: `url(${booksbanner})`}}>
-        </Jumbotron>
-		<div className="books-Header">
-        	<Heading title="Books" />
-			<blockquote className="blockquote text-center">
-				<q className="mb-0">All knowledge is worth having</q>
-				<footer className="blockquote-footer">Jacqueline Carey</footer>
-			</blockquote>
-			<div className="about-Books">
-				<p>
-					Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend finibus et ac orci. Aliquam metus massa,
-					aliquam quis arcu sit amet, consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa euismod, pretium lacinia magna. Donec mi orci, sollicitudin in luctus a, varius
-					eget massa.
-				</p>
-			</div>
-		</div>
+		<Container fluid className="container-category">
+			<Row>
+				<Col className="column-content">
+					<Heading title="Books" />
+					<blockquote className="blockquote">
+						<q className="mb-0">All knowledge is worth having</q>
+						<footer className="blockquote-footer">Jacqueline Carey</footer>
+					</blockquote>
+					<p className="category-description">
+						Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend finibus et ac orci. Aliquam metus massa,
+						aliquam quis arcu sit amet, consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa euismod, pretium lacinia magna. Donec mi orci, sollicitudin in luctus a, varius
+						eget massa.
+					</p>
+					</Col>
+				<Col className="column-image">
+					<img src={BookImg} className="cateogry-image" alt="Computer and plant" />
+				</Col>
+			</Row>
+		</Container>
 		<Container className="container-articles">
 			<Row>
 				<h2>Book Articles</h2>

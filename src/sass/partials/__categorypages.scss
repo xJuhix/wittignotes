@@ -23,13 +23,13 @@
 
 .container-category{
     background-color: $colour-secondary;
+    height: 650px;
     
     .column-content{
        margin-left: 5rem;
+       margin-top: 5rem;
 
-       .h1{
-           margin-top: 5rem !important;
-       }
+
         .category-description{
             margin-top: 3rem;
             width:600px;
