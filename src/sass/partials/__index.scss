@@ -73,7 +73,7 @@
 .container-recentarticles{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     background-color: $colour-secondary;
     padding: 10px;
 
@@ -82,6 +82,7 @@
         font-size: 26px;
         color: black;
         width: 100%;
+        
     }
 }
 
