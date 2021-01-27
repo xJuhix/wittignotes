@@ -40,12 +40,8 @@ export function Home() {
 		<h2>Recent Articles</h2>
 			
 		<Container fluid className="recentarticles">
-
-			<Row>
-				<Col>
-					<RecentArticles/>
-				</Col>
-			</Row>
+			
+			<RecentArticles/>
 			
 		</Container>
 		
