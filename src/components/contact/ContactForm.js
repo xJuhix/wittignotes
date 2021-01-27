@@ -5,6 +5,7 @@ import * as yup from "yup";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import ErrorMessage from "./ErrorMessage";
+import Heading from "../layout/Heading";
 
 
 const schema = yup.object().shape({
@@ -43,12 +44,14 @@ function ContactForm() {
     }
 
     return (
-        <Form onSubmit={handleSubmit(onSubmit)}>
+        <div className="form">
+        <Form className="contactform" onSubmit={handleSubmit(onSubmit)}>
             {sent && <div className="validationMessage"> 
                         <h3>Thank you!</h3> 
-                        <p>Your message has been successfully sent. We will contact you very soon!</p>
+                        <p>Your message has been successfully sent. I will contact you as soon as possible!</p>
                     </div> 
             }
+        <Heading title="Contact Me" />    
             <Form.Group>
                 <Form.Label>First name:</Form.Label>
                 <Form.Control type="text" name="firstName" placeholder="Enter your first name" ref={register} />
@@ -76,6 +79,7 @@ function ContactForm() {
 
             <Button variant="send" size="lg" type="submit">Send</Button>     
         </Form>
+        </div>
         
     );
 }
