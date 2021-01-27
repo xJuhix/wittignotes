@@ -15,7 +15,7 @@ export function Books() {
 	return (
 		<>
 		<Container fluid className="container-category">
-			<Row>
+			<Row >
 				<Col sm={12} lg={6} className="column-content">
 					<Heading title="Books" />
 					<blockquote className="blockquote">
@@ -34,10 +34,10 @@ export function Books() {
 			</Row>
 		</Container>
 		<Container className="container-articles">
-			<Row>
-				<h2>Book Articles</h2>
-			</Row>
+
+			<h2>Book Articles</h2>
 			<BookArticles/>
+
 		</Container>
 		<Footer/>
 		</>
