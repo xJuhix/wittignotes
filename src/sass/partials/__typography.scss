@@ -8,14 +8,12 @@ $font-p: 'Open Sans', sans-serif;
 
 
 h1{
-    font-size: 4rem !important;
     font-family: $font-h1;
     color: $colour-heading;
 }
 
 h2{
-    font-size: 3rem !important;
-    text-decoration: underline $colour-blue 3px !important;
+    text-decoration: underline $colour-blue 3px;
     font-family: $font-h2;
     color: $colour-secondary;
     text-align: center !important;

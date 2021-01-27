@@ -20,6 +20,13 @@ $theme-colors: (
     "dark": $colour-headerfooter,
 );
 
+$font-size-base: 1rem !default;
+$h1-font-size: $font-size-base * 4 !default;
+$h2-font-size: $font-size-base * 2 !default;
+
+
+
+
 $input-bg: $colour-secondary;
 $input-border-color: $colour-input;
 $border-radius: 3px;
