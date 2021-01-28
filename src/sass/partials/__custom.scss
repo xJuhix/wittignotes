@@ -29,6 +29,12 @@ $navbar-dark-color: $colour-secondary !default;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 
 
+$nav-tabs-link-active-color: $colour-secondary !default;
+$nav-link-disabled-color: rgb(218, 218, 218)fff !default;
+$nav-tabs-link-active-border-color:  $colour-blue !default;
+
+
+
 $input-bg: $colour-secondary;
 $input-border-color: $colour-input;
 $border-radius: 3px;
