@@ -1,28 +1,31 @@
-.card {
-    margin-bottom: 30px;
-    box-shadow: 0px 3px 16px #ccc;
-    transition: all 0.4s;
-
-    &:hover {
-        box-shadow: 0 0 0 #ccc;
+.articledetails{
+    
+    background-color: $colour-secondary;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    
+    
+    h1{
+        padding-top:3rem;
+        text-align: center;
     }
-}
 
-.card-title.h5 {
-    font-size: 1em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+    .article-img{
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.search {
-    margin: 2em 0;
-}
+    .article-info{
+        text-align: center;
+        padding: 10px;
+    }
 
-.clear-search {
-    margin-bottom: 30px;
-}
-
-.clear-search__button {
-    margin-left: 10px;
+    
 }

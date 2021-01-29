@@ -28,7 +28,10 @@ export function Economics() {
         </Container>
 			
 		<h2>Economics Articles</h2>
-		<EconomicsArticles/>
+		<div className="category-articles"> 
+			<EconomicsArticles/>
+		</div>
+		
 		
 		<Footer/>
 		</>

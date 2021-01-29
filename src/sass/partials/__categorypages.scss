@@ -1,15 +1,16 @@
 .container-category{
     background-color: $colour-secondary;
     margin-bottom: 4rem;
-    
-    
-    .column-content{
-       margin-top: 5rem;
-       padding-left:5rem;
 
-        @media (min-width: 576) {
-            margin-left: 5rem;
-        }
+    .column-content{
+        margin-top: 5rem;
+        padding-left:5rem;
+
+       @media only screen and (max-width: 576px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
        .blockquote{
         margin-top: 2rem;
@@ -21,10 +22,10 @@
 
         .category-description{
             margin-top: 3rem;
-            width: 500px;
+            width: 600px;
 
-            @media (min-width: 576) {
-                width: 300px;
+           @media only screen and (max-width: 576px) {
+                width: auto;
             }
 
         }
@@ -45,13 +46,15 @@
 
 }
 
-.container-articles{
-    margin-top: 3rem;
-
-    .row{
-        margin-top: 3rem;
+.category-articles{
+    
+    @media only screen and (max-width: 576px) {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
     }
-}
 
+    
+}
 
 

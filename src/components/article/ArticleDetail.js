@@ -3,6 +3,7 @@ import Heading from "../layout/Heading";
 import { useParams } from "react-router-dom";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import { BASE_URL } from "../../constants/api";
 import { FaClock, FaUser, FaCalendarDay, FaFolder} from "react-icons/fa";
@@ -29,26 +30,29 @@ function ArticleDetails() {
 
 	return ( 
 		<> 
+		<div className="articledetails">
 			{article && 
-			<> 
+			<>
 			<Heading title={article.title.rendered} /> 
-			<Col> 
+			<Container> 
 				<Col md={6} className="articleDetail-image"> 
-				<Image src={article.acf.image_.url} width="500" rounded />
+				<Image src={article.acf.image_.url} width="100%" className="article-img"/>
 				</Col> 
-				<Row> 
+				<Row className="article-info"> 
 					<p><span><FaUser size="1rem"/></span>{article.acf.author_}</p> 
 					<p><span><FaClock size="1rem"/></span>{article.acf.readtime_}</p>
 					<p><span><FaFolder size="1rem"/></span>{article.acf.category_}</p>
 					<p><span><FaCalendarDay size="1rem"/></span>{article.acf.date_}</p>
 				</Row> 
-				<Col>
+				<Col className="article-text">
 					<p dangerouslySetInnerHTML={{__html: article.excerpt.rendered }}></p>
 					<p dangerouslySetInnerHTML={{__html: article.content.rendered}}></p> 
 				</Col> 
-			</Col> 
+			</Container>
+			
 			</> 
 			}
+		</div>
 		<>
 			<Footer/>
 		</> 

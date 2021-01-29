@@ -28,8 +28,9 @@ export function Productivity() {
         </Container>
 
 		<h2>Productivity Articles</h2>
-		<ProductivityArticles/>
-
+		<div className="category-articles"> 
+			<ProductivityArticles/>
+		</div>	
 		<Footer/>
 		</>
 	);

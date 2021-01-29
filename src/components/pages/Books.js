@@ -35,7 +35,9 @@ export function Books() {
 		</Container>
 		
 		<h2>Book Articles</h2>
-		<BookArticles/>
+		<div className="category-articles"> 
+			<BookArticles/>
+		</div>
 
 		<Footer/>
 		</>
