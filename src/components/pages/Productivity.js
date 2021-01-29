@@ -26,12 +26,10 @@ export function Productivity() {
 				</Col>
             </Row>
         </Container>
-		<Container className="container-articles">
-			<Row>
-				<h2>Productivity Articles</h2>
-			</Row>
-			<ProductivityArticles/>
-		</Container>
+
+		<h2>Productivity Articles</h2>
+		<ProductivityArticles/>
+
 		<Footer/>
 		</>
 	);

@@ -33,12 +33,10 @@ export function Books() {
 				</Col>
 			</Row>
 		</Container>
-		<Container className="container-articles">
+		
+		<h2>Book Articles</h2>
+		<BookArticles/>
 
-			<h2>Book Articles</h2>
-			<BookArticles/>
-
-		</Container>
 		<Footer/>
 		</>
 	);

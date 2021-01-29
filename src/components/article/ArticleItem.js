@@ -15,7 +15,7 @@ function ArticleItem({ image_, title, excerpt, readtime_, id, category_ }) {
                 <Card.Text><span><FaClock size="1rem"/></span> Read-time: {readtime_} </Card.Text>
 				<Card.Text><span><FaFolder size="1rem"/></span> {category_} </Card.Text>
 				<Link to={"/article/" + id}>
-					<Button variant="secondary" block>
+					<Button variant="primary" block className="mt-auto btn-lg ">
 						Read Article
 					</Button>
 				</Link>

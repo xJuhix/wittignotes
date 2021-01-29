@@ -26,12 +26,10 @@ export function Economics() {
 				</Col>
             </Row>
         </Container>
-		<Container className="container-articles">
-			<Row>
-				<h2>Economics Articles</h2>
-			</Row>
-			<EconomicsArticles/>
-		</Container>
+			
+		<h2>Economics Articles</h2>
+		<EconomicsArticles/>
+		
 		<Footer/>
 		</>
 	);
