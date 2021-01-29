@@ -38,11 +38,13 @@ function ArticleDetails() {
 				<Col md={6} className="articleDetail-image"> 
 				<Image src={article.acf.image_.url} width="100%" className="article-img"/>
 				</Col> 
-				<Row className="article-info"> 
-					<p><span><FaUser size="1rem"/></span>{article.acf.author_}</p> 
-					<p><span><FaClock size="1rem"/></span>{article.acf.readtime_}</p>
-					<p><span><FaFolder size="1rem"/></span>{article.acf.category_}</p>
-					<p><span><FaCalendarDay size="1rem"/></span>{article.acf.date_}</p>
+				<Row className="article-info">
+					<ul>
+						<li><span><FaUser size="1rem"/></span>{article.acf.author_}</li> 
+						<li><span><FaClock size="1rem"/></span>{article.acf.readtime_}</li>
+						<li><span><FaFolder size="1rem"/></span>{article.acf.category_}</li>
+						<li><span><FaCalendarDay size="1rem"/></span>{article.acf.date_}</li>
+					</ul>
 				</Row> 
 				<Col className="article-text">
 					<p dangerouslySetInnerHTML={{__html: article.excerpt.rendered }}></p>

@@ -6,10 +6,11 @@
         margin-top: 5rem;
         padding-left:5rem;
 
-       @media only screen and (max-width: 576px) {
+       @media (max-width: 576px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-left:2rem;
     }
 
        .blockquote{

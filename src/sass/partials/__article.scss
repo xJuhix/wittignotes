@@ -1,5 +1,4 @@
 .articledetails{
-    
     background-color: $colour-secondary;
     margin-bottom: 5rem;
     margin-top: 5rem;
@@ -22,10 +21,17 @@
         margin-right: auto;
     }
 
-    .article-info{
-        text-align: center;
+    .article-info ul{
+        list-style-type: none;
+        display: inline;
         padding: 10px;
-    }
 
+        li{
+            
+        }
+    }
+    .article-text{
+        padding-bottom: 35px;
+    }
     
 }
