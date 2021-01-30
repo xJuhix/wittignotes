@@ -24,7 +24,7 @@ function ProductivityArticles() {
     <>
       <Row>
         {articles.map((productivity) => (
-          <Col sm={6} md={3} key={productivity.id}>
+          <Col sm={6} md={6} key={productivity.id}>
             <ArticleItem
               id={productivity.id}
               date_={productivity.acf.date_}
