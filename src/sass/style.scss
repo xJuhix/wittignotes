@@ -1,13 +1,13 @@
-@import "partials/__custom";
-@import "partials/__typography";
-@import "partials/__layout";
-@import "partials/__index";
-@import "partials/__categorypages";
-@import "partials/__cards";
-@import "partials/__search";
-@import "partials/__article";
-@import "partials/__contact";
-@import "partials/__footer";
+@import 'partials/custom';
+@import 'partials/typography';
+@import 'partials/layout';
+@import 'partials/index';
+@import 'partials/categorypages';
+@import 'partials/cards';
+@import 'partials/search';
+@import 'partials/article';
+@import 'partials/contact';
+@import 'partials/footer';
 
 
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';

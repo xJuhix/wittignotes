@@ -1,0 +1,90 @@
+.jumbotron-Index {
+  background-color: $colour-secondary;
+  margin-bottom: 3rem;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.about {
+  background-color: $colour-secondary;
+  margin-bottom: 7rem;
+  margin-top: 7rem;
+  width: 90%;
+
+  @media (min-width: 760px) and (max-width: 1080px) {
+    margin-top: 3rem;
+  }
+
+  .row {
+    height: 300px;
+
+    @media (min-width: 300px) and (max-width: 1080px) {
+      height: auto;
+    }
+  }
+
+  .about-image {
+    display: flex;
+    justify-content: center;
+        
+    #photo {
+      bottom: 90px;
+      height: 450px;
+      position: relative;
+            
+
+      @media (min-width: 760px) and (max-width: 1080px) {
+        bottom: 0;
+        height: 400px;
+        margin-top: 10px;
+        width: 450px;
+               
+      }
+
+      @media (max-width: 576px) {
+        bottom: 0;
+        height: 300px;
+        margin-top: 10px;
+        width: 350px;
+                
+      }
+    }
+  }
+
+  .about-text {
+    padding: 35px;
+        
+    h3 {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+    }
+       
+  }
+
+    
+}
+
+.container-recentarticles {
+  align-items: center;
+  background-color: $colour-secondary;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+    
+  .RecentArticleCard {
+    color: black;
+    font-size: 26px;
+    width: 100%;
+        
+  }
+}
+
+
+

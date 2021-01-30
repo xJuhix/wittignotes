@@ -1,14 +1,14 @@
 // custom
 
-$colour-headerfooter:#3b3f45;
-$colour-background:#676d74;
-$colour-heading:#000000;
-$colour-primary:#3C3C3C;
-$colour-secondary:#ffffff;
-$colour-blue:#45C5EF;
+$colour-headerfooter: #3b3f45;
+$colour-background: #676d74;
+$colour-heading: #000;
+$colour-primary: #3c3c3c;
+$colour-secondary: #fff;
+$colour-blue: #45c5ef;
 
 
-$colour-input: #3C3C3C;
+$colour-input: #3c3c3c;
 
 $medium-width: 768px;
 
@@ -16,8 +16,8 @@ $medium-width: 768px;
 
 // bootstrap
 $theme-colors: (
-    "primary": $colour-primary,
-    "dark": $colour-headerfooter,
+  'primary': $colour-primary,
+  'dark': $colour-headerfooter,
 );
 
 $font-size-base: 1rem !default;
@@ -31,7 +31,7 @@ $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3
 
 $nav-tabs-link-active-color: $colour-secondary !default;
 $nav-link-disabled-color: rgb(218, 218, 218)fff !default;
-$nav-tabs-link-active-border-color:  $colour-blue !default;
+$nav-tabs-link-active-border-color: $colour-blue !default;
 
 
 
@@ -39,15 +39,15 @@ $input-bg: $colour-secondary;
 $input-border-color: $colour-input;
 $border-radius: 3px;
 
-$input-placeholder-color:$colour-primary;
+$input-placeholder-color: $colour-primary;
 $input-plaintext-color: $colour-primary;
 
 
-$body-bg:$colour-background;
+$body-bg: $colour-background;
 
 
 $card-bg: $colour-secondary;
-$card-cap-bg: black;
+$card-cap-bg: $colour-heading;
 
 
 

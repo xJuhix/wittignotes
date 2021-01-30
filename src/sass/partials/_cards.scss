@@ -1,0 +1,38 @@
+
+.card {
+  box-shadow: 6px 6px 6px $colour-blue;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  max-height: 470px;
+  transition: all 0.2s;
+  width: 18rem;
+
+  &::hover {
+    box-shadow: 0 0 0 #ccc;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-img-top {
+    height: 180px;
+    margin: 0;
+    width: 250;
+  }
+
+  .button {
+    align-self: end;
+  }
+}
+
+
+.card-title.h5 {
+  font-size: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
