@@ -1,3 +1,6 @@
+/* eslint-disable react/no-danger */
+/* eslint-disable no-console */
+/* eslint-disable no-underscore-dangle */
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
@@ -29,37 +32,36 @@ function ArticleDetails() {
   return (
     <>
       <div className="articledetails">
-        {article
-			&& (
-	<>
-  <h3>{article.acf.category_}</h3>
-  <Heading title={article.title.rendered} />
-  <Container>
-    <Col className="articleDetail-image">
-      <Image src={article.acf.image_.url} width="100%" className="article-img" />
-    </Col>
-    <Row className="article-info">
-      <p>
-        <span><FaUser size="1em" /></span>
-        {article.acf.author_}
-      </p>
-      <p>
-        <span><FaClock size="1rem" /></span>
-        {article.acf.readtime_}
-      </p>
-      <p>
-        <span><FaCalendarDay size="1rem" /></span>
-        {article.acf.date_}
-      </p>
-    </Row>
-    <Col className="article-text">
-      <p dangerouslySetInnerHTML={{ __html: article.excerpt.rendered }} />
-      <p dangerouslySetInnerHTML={{ __html: article.content.rendered }} />
-    </Col>
-  </Container>
+        {article && (
+        <>
+          <h3>{article.acf.category_}</h3>
+          <Heading title={article.title.rendered} />
+          <Container>
+            <Col className="articleDetail-image">
+              <Image src={article.acf.image_.url} width="100%" className="article-img" />
+            </Col>
+            <Row className="article-info">
+              <p>
+                <span><FaUser size="1em" /></span>
+                {article.acf.author_}
+              </p>
+              <p>
+                <span><FaClock size="1rem" /></span>
+                {article.acf.readtime_}
+              </p>
+              <p>
+                <span><FaCalendarDay size="1rem" /></span>
+                {article.acf.date_}
+              </p>
+            </Row>
+            <Col className="article-text">
+              <p dangerouslySetInnerHTML={{ __html: article.excerpt.rendered }} />
+              <p dangerouslySetInnerHTML={{ __html: article.content.rendered }} />
+            </Col>
+          </Container>
 
-	</>
-			)}
+        </>
+        )}
       </div>
       <>
         <Footer />

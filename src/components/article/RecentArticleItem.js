@@ -1,31 +1,40 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-import Row from "react-bootstrap/Row";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import Row from 'react-bootstrap/Row';
 
+function RecentArticleItem({
+  title, date_, category_, id,
+}) {
+  return (
+    <>
+      <div className="RecentArticleCard">
 
+        <Link to={`/article/${id}`}>
+          <Row>
+            <p>
+              {title}
+              ,
+              {' '}
+              {category_}
+              ,
+              {' '}
+              {date_}
+              {' '}
+            </p>
+          </Row>
+        </Link>
 
-function RecentArticleItem({ title, date_, category_, id }) {
-	return (
-		<>
-			<div className="RecentArticleCard">
-				
-				<Link to={"/article/" + id}>
-					<Row>
-						<p>{title}, {category_}, {date_} </p>
-					</Row>
-				</Link>
-								
-			</div>
-		</>
-	);
+      </div>
+    </>
+  );
 }
 
 RecentArticleItem.propTypes = {
-	id: PropTypes.number.isRequired,
-	title: PropTypes.string.isRequired,
-	category_: PropTypes.string.isRequired,
-	date_: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  category_: PropTypes.string.isRequired,
+  date_: PropTypes.string.isRequired,
 };
 
 export default RecentArticleItem;

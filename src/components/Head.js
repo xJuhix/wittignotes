@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
 
 const fallbackMeta = {
   title: 'WittigNotes',
   description: 'WittigNotes is a blog developed to share opinions, reviews and tips on Books, Economics and Productivity',
-}
+};
 
-const Head = ({ title = fallbackMeta.title, description = fallbackMeta.description, photo }) => (
+const Head = ({ title = fallbackMeta.title, description = fallbackMeta.description }) => (
   <Helmet>
     <html lang="en" />
     <title>{title}</title>
@@ -27,11 +27,11 @@ const Head = ({ title = fallbackMeta.title, description = fallbackMeta.descripti
       content={title}
     />
   </Helmet>
-)
+);
 
-export default Head
+export default Head;
 
 Head.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-}
+};
