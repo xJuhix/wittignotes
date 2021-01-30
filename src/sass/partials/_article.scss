@@ -37,13 +37,16 @@
     }
   }
 
-  .article-body {
-    .article-body--text {
-      padding-bottom: 3rem;
-    }
+  .article__body {
+    padding-bottom: 20px;
 
-    p {
-      font-size: 1.2rem;
+    .article__body--text {
+			margin-top: 4rem;
+			margin-bottom: 3rem;
+			
+			p {
+				font-size: 1.2rem;
+			}
     }
 			
   }

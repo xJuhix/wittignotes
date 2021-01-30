@@ -11,7 +11,7 @@ import RecentArticles from '../article/RecentArticles';
 export function Home() {
   return (
     <>
-      <Jumbotron className="jumbotron-Index">
+      <Jumbotron>
         <Container>
           <Heading title="My opinions and views on Books, Economics and Productivity" />
         </Container>
