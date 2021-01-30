@@ -1,19 +1,33 @@
-body {
-  background: $colour-background;
-  margin: 0%;
-  overflow-x: hidden;
-  padding: 0%;
-}
 
 .nav {
-	background: $colour-headerfooter;
+  background: $colour-headerfooter;
 	
   .navbar-toggler-icon {
     color: $colour-secondary;
+		
+    @media (max-width: 770px) and (min-width: 576px) {
+      margin-right: 3rem;
+      
+    }
   }
 
-  .logo {
-    margin-right: 3rem;
+  .nav__brand {
+    height: 90px;
+    margin-left: 3rem;
+    width: 350px;
+		
+    @media (max-width: 768px) {
+      height: 70px;
+      margin-left: 1rem;
+      width: 300px;
+    }
+    @media (max-width: 576px) {
+      height: 50px;
+      margin-left: 0;
+      width: 220px;
+    }
+		
+   
   }
 
   .nav__link {
@@ -25,14 +39,13 @@ body {
     margin-top: 2rem;
     padding: 1rem;
     transition: all 0.4s;
-
-    :hover {
-      text-decoration: underline $colour-blue;
+		
+    &:hover {
+      text-decoration: underline $colour-blue 3px;
     }
-    
   }
-
 }
+
 
 
 

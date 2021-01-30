@@ -1,43 +1,28 @@
 .footer {
   background-color: $colour-headerfooter;
   color: $colour-secondary;
-  display: flex;
-  justify-content: space-between;
-
+	
   @media (max-width: 576px) {
     text-align: center;
   }
-	
-  .footer__text {
+
+  .footer__container {
+    margin-top: 1rem;
+    padding-top: 10px;
+		
     @media (max-width: 576px) {
+      margin-bottom: 1rem;
       margin-top: 1rem;
     }
+    
   }
-  
-}
 
-.socaialLinks {
-  display: flex;
-
-  @media (max-width: 576px) {
-    justify-content: center;
+  .footer__link--item {
+    color: $colour-secondary;
+    padding: 10px;
   }
 
 }
 
-.socaialLinks a {
-  justify-content: end;
-  padding: 10px;
 
-
-  @media (max-width: 576px) {
-    margin-bottom: 1rem;
-    padding: 3px;
-    padding-top: 5px;
-  }
-}
-
-footer svg {
-  color: $colour-secondary;
-}
 

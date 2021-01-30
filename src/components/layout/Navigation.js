@@ -17,14 +17,12 @@ import logo from '../images/logo.png';
 function Navigation() {
   return (
     <Router>
-      <Navbar className="nav" expand="lg">
+      <Navbar className="nav" expand="xl">
         <NavLink to="/" exact>
           <Navbar.Brand className="logo nav__item">
             <img
               src={logo}
-              width="300"
-              height="70"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top nav__brand"
               alt="WittigNotes logo"
             />
           </Navbar.Brand>
