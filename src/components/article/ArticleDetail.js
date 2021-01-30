@@ -31,30 +31,34 @@ function ArticleDetails() {
 
   return (
     <>
-      <div className="articledetails">
+      <div className="article">
         {article && (
         <>
-          <h3>{article.acf.category_}</h3>
-          <Heading title={article.title.rendered} />
-          <Container>
-            <Col className="articleDetail-image">
-              <Image src={article.acf.image_.url} width="100%" className="article-img" />
-            </Col>
-            <Row className="article-info">
-              <p>
-                <span><FaUser size="1em" /></span>
-                {article.acf.author_}
-              </p>
-              <p>
-                <span><FaClock size="1rem" /></span>
-                {article.acf.readtime_}
-              </p>
-              <p>
-                <span><FaCalendarDay size="1rem" /></span>
-                {article.acf.date_}
-              </p>
-            </Row>
-            <Col className="article-text">
+          <div className="article__header">
+            <Container>
+              <h3 className="article__subtitle">{article.acf.category_}</h3>
+              <Heading className="article__title" title={article.title.rendered} />
+              <Col className=" article__header--image">
+                <Image src={article.acf.image_.url} width="100%" className="article-img" />
+              </Col>
+              <Row className="article-info">
+                <p className="article__header--item">
+                  <span><FaUser size="1em" /></span>
+                  {article.acf.author_}
+                </p>
+                <p className="article__header--item">
+                  <span><FaClock size="1rem" /></span>
+                  {article.acf.readtime_}
+                </p>
+                <p className="article__header--item">
+                  <span><FaCalendarDay size="1rem" /></span>
+                  {article.acf.date_}
+                </p>
+              </Row>
+            </Container>
+          </div>
+          <Container className="article__body">
+            <Col className="article__body--text">
               <p dangerouslySetInnerHTML={{ __html: article.excerpt.rendered }} />
               <p dangerouslySetInnerHTML={{ __html: article.content.rendered }} />
             </Col>

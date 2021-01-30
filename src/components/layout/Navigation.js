@@ -14,12 +14,12 @@ import Search from '../pages/Search';
 import ArticleDetail from '../article/ArticleDetail';
 import logo from '../images/logo.png';
 
-function Layout() {
+function Navigation() {
   return (
     <Router>
-      <Navbar expand="lg">
+      <Navbar className="nav" expand="lg">
         <NavLink to="/" exact>
-          <Navbar.Brand>
+          <Navbar.Brand className="logo nav__item">
             <img
               src={logo}
               width="300"
@@ -31,20 +31,20 @@ function Layout() {
         </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-            <NavLink to="/books" className="nav-link">
+          <Nav className="ml-auto nav__item">
+            <NavLink to="/books" className="nav__link">
               Books
             </NavLink>
-            <NavLink to="/economics" className="nav-link">
+            <NavLink to="/economics" className="nav__link">
               Economics
             </NavLink>
-            <NavLink to="/productivity" className="nav-link">
+            <NavLink to="/productivity" className="nav__link">
               Productivy
             </NavLink>
-            <NavLink to="/contact" className="nav-link">
+            <NavLink to="/contact" className="nav__link">
               Contact
             </NavLink>
-            <NavLink to="/search" className="nav-link">
+            <NavLink to="/search" className="nav__link">
               Search
             </NavLink>
           </Nav>
@@ -62,4 +62,4 @@ function Layout() {
     </Router>
   );
 }
-export default Layout;
+export default Navigation;

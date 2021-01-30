@@ -1,10 +1,10 @@
 import React from 'react';
-import Layout from './components/layout/Layout';
+import Navigation from './components/layout/Navigation';
 import './sass/style.scss';
 
 function App() {
   return (
-    <Layout />
+    <Navigation />
   );
 }
 
