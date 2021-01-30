@@ -1,38 +1,45 @@
-
 .card {
-  box-shadow: 6px 6px 6px $colour-blue;
+  box-shadow: 9px 9px 9px $colour-headerfooter;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
-  max-height: 470px;
+  max-height: 500px;
   transition: all 0.2s;
   width: 18rem;
 
-  &::hover {
-    box-shadow: 0 0 0 #ccc;
+  &:hover {
+    box-shadow: 6px 6px 6px 6px $colour-blue;
   }
 
-  .card-body {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card-img-top {
+  .card__image {
     height: 180px;
     margin: 0;
     width: 250;
   }
 
-  .button {
-    align-self: end;
+  .card__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__title {
+    font-size: 1.5rem;
+  }
+	
+  .btn-submit {
+    background-color: $colour-primary;
+    border-radius: 0;
+    color: $colour-secondary;
+    margin-top: 35px;
+    width: 100%;
+			
+    &:hover {
+      background-color: $colour-blue;
+      color: $colour-secondary;
+    }
   }
 }
 
 
-.card-title.h5 {
-  font-size: 1em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
+

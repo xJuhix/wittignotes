@@ -10,11 +10,11 @@ function ArticleItem({
 }) {
   return (
     <Card>
-      <Card.Img variant="top" src={image_} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text dangerouslySetInnerHTML={{ __html: excerpt }} />
-        <Card.Text>
+      <Card.Img className="card__image" variant="top" src={image_} />
+      <Card.Body className="card__body">
+        <Card.Title className="card__title">{title}</Card.Title>
+        <Card.Text className="card__excerpt" dangerouslySetInnerHTML={{ __html: excerpt }} />
+        <Card.Text className="card__info">
           <span><FaClock size="1rem" /></span>
           {' '}
           Read-time:
@@ -28,8 +28,8 @@ function ArticleItem({
           {category_}
           {' '}
         </Card.Text>
-        <Link to={`/article/${id}`}>
-          <Button variant="primary" block className="mt-auto btn-lg ">
+        <Link to={`/article/${id}`} className="card__action">
+          <Button variant="submit" block className="button mt-auto btn-lg ">
             Read Article
           </Button>
         </Link>
