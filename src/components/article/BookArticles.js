@@ -24,7 +24,7 @@ function BookArticles() {
     <>
       <Row>
         {articles.map((book) => (
-          <Col sm={6} md={6} key={book.id}>
+          <Col sm={6} md={6} lg={4} xl={3} key={book.id}>
             <ArticleItem
               id={book.id}
               date_={book.acf.date_}

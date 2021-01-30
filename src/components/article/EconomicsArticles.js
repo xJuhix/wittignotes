@@ -26,7 +26,7 @@ function EconomicsArticles() {
     <>
       <Row>
         {articles.map((economics) => (
-          <Col sm={6} md={6} key={economics.id}>
+          <Col sm={12} md={6} lg={4} xl={3} key={economics.id}>
             <ArticleItem
               id={economics.id}
               date_={economics.acf.date_}

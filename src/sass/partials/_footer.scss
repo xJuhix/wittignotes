@@ -1,20 +1,19 @@
-footer {
+.footer {
   background-color: $colour-headerfooter;
   color: $colour-secondary;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
 
   @media (max-width: 576px) {
     text-align: center;
   }
-
+	
+  .footer__text {
+    @media (max-width: 576px) {
+      margin-top: 1rem;
+    }
+  }
+  
 }
 
 .socaialLinks {
@@ -32,6 +31,7 @@ footer {
 
 
   @media (max-width: 576px) {
+    margin-bottom: 1rem;
     padding: 3px;
     padding-top: 5px;
   }

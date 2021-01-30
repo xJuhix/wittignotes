@@ -10,12 +10,12 @@ function Footer() {
   return (
     <>
       <footer className="footer">
-        <Container fluid>
+        <Container className="footer__container">
           <Row>
-            <Col md={4}>
-              <span>&copy; 2020 Wittig Notes</span>
+            <Col sm={6} className="footer__text">
+              <p>&copy; 2020 Wittig Notes</p>
             </Col>
-            <Col md={{ span: 4, offset: 4 }} className="socaialLinks">
+            <Col sm={6} className="socaialLinks">
               <a href="https://www.goodreads.com/review/list/93584625?ref=nav_mybooks" aria-label=" Felix Wittig Reading List"><span><FaGoodreadsG size="2rem" /></span></a>
               <a href="https://www.youtube.com/channel/UC6HslxZb3iZMZcc8mj32cyQ" aria-label="Felix Wittig Youtubepage"><span><FaYoutube size="2rem" /></span></a>
               <a href="https://www.instagram.com/felix_9727/?hl=en" aria-label=" Felix Wittig Instagram"><span><FaInstagram size="2rem" /></span></a>
