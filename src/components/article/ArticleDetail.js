@@ -31,7 +31,7 @@ function ArticleDetails() {
       <div className="articledetails">
         {article
 			&& (
-<>
+	<>
   <h3>{article.acf.category_}</h3>
   <Heading title={article.title.rendered} />
   <Container>
@@ -58,7 +58,7 @@ function ArticleDetails() {
     </Col>
   </Container>
 
-</>
+	</>
 			)}
       </div>
       <>
