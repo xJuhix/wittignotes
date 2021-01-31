@@ -7,22 +7,26 @@
 .category__content {
   margin-top: 5rem;
   padding-left: 5rem;
-
+	
   @media (max-width: 576px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 2rem;
   }
+ 
 }
 
-.category__blockquote {
+.blockquote {
   margin-top: 2rem;
-  width: 700px;
+  max-width: 700px;
+	
+  
 
   .blockquote-footer {
     background-color: $colour-secondary;
-  }
+  } 
+	
 }
 
 
