@@ -1,6 +1,5 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Heading from '../layout/Heading';
 import ProductivityArticles from '../article/ProductivityArticles';
@@ -10,27 +9,35 @@ import ProductivityImg from '../images/productivityimg.jpg';
 export function Productivity() {
   return (
     <>
-      <Container fluid className="container-category">
+      <div className="category">
         <Row>
-          <Col sm={12} lg={6} className="column-content">
+          <Col sm={12} lg={6} className="category__content">
             <Heading title="Productivity" />
-            <p className="category-description">
-              Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi,
-              a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend
-              finibus et ac orci. Aliquam metus massa,aliquam quis arcu sit amet,
-              consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa
-              euismod, pretium lacinia magna. Donec mi orci, sollicitudin in luctus
-              a, varius eget massa.
-            </p>
+            <blockquote className="category__blockquote blockquote ">
+              <q className="mb-0">Focus on being productive instead of busy.</q>
+              <footer className="blockquote-footer">Tim Ferris</footer>
+            </blockquote>
+            <div className="category__text">
+              <p>
+                We all are very busy especially in the 21st century.
+                With all these distractions around us staying productive
+                can be incredible hard. There is always another email another
+                text or another meeting. In the rush of the moment we tend to
+                forget that being busy and being productive are two completely
+                different things. In this category I will share some of the
+                productivity hacks that I use and how you can implement them
+                in your life as well.
+              </p>
+            </div>
           </Col>
-          <Col sm={12} lg={6} className="column-image">
+          <Col sm={12} lg={6} className="category__image">
             <img src={ProductivityImg} className="cateogry-image" alt="Computer and plant" />
           </Col>
         </Row>
-      </Container>
+      </div>
 
       <h2>Productivity Articles</h2>
-      <div className="category-articles">
+      <div className="category__articles">
         <ProductivityArticles />
       </div>
       <Footer />

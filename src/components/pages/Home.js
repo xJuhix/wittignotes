@@ -27,12 +27,10 @@ export function Home() {
           <Col lg={7} className="about-text">
             <h3>Felix Wittig</h3>
             <p>
-              Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi,
-              a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend
-              finibus et ac orci. Aliquam metus massa,aliquam quis arcu sit amet,
-              consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa
-              euismod, pretium lacinia magna. Donec mi orci, sollicitudin in luctus
-              a, varius eget massa.
+              Hi friends,
+              my name is Felix and I am a Business Administration student based in Germany
+              and I truly believe that most of worlds problems can be solved with good economics.
+              I also love reading and am an absolute productivity nerd.
             </p>
           </Col>
         </Row>
