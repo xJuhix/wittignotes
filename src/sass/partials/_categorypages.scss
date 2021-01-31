@@ -56,21 +56,6 @@
     text-decoration: underline;
   }
 
-  &__image {
-    margin-right: 0;
-		
-  }
-
-  &__articles {
-    
-    @media only screen and (max-width: 576px) {
-      margin-left: auto;
-      margin-right: auto;
-      width: 300px;
-    }
-
-  }
-
 }
 
 .image {
