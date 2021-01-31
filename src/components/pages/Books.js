@@ -29,9 +29,9 @@ export function Books() {
                 that currently are in my book bag.
               </p>
               <p>
-                Check out my book bag
+                Check out my
                 {' '}
-                <a href="https://www.goodreads.com/review/list/93584625?ref=nav_mybooks" aria-label=" Felix Wittig Book Bag" className="category__text-link">here</a>
+                <a href="https://www.goodreads.com/review/list/93584625?ref=nav_mybooks" aria-label=" Felix Wittig Book Bag" className="category__text-link">book bag here</a>
               </p>
             </div>
           </Col>

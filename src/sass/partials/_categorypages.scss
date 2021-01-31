@@ -12,6 +12,11 @@
   .blockquote,
   .category__text {
     margin-left: 3rem;
+		
+    @media (max-width: 576px) {
+      margin-left: 0.5rem;
+      padding: 5px;
+    }
   }
 	
   @media (max-width: 576px) {
@@ -27,8 +32,6 @@
   margin-top: 2rem;
   max-width: 700px;
 	
-  
-
   .blockquote-footer {
     background-color: $colour-secondary;
   } 
