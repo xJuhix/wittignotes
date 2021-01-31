@@ -40,11 +40,11 @@ export function Home() {
 
       <h2>Recent Articles</h2>
 
-      <Container fluid className="container-recentarticles">
+      <div className="container-recentarticles">
 
         <RecentArticles />
 
-      </Container>
+      </div>
 
       <Footer />
 

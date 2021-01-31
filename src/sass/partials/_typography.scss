@@ -15,12 +15,9 @@ h1 {
 h2 {
   color: $colour-secondary;
   font-family: $font-h2;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
-  text-decoration: underline $colour-blue 3px;
-
-
+	text-decoration: underline $colour-blue 3px;
+	width: auto;
 }
 
 h3 {
