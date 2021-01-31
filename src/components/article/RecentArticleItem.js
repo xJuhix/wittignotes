@@ -8,7 +8,7 @@ function RecentArticleItem({
 }) {
   return (
     <>
-      <div className="RecentArticleCard">
+      <div className="recentarticle__card">
 
         <Link to={`/article/${id}`}>
           <Row>

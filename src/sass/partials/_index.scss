@@ -24,53 +24,54 @@
       height: auto;
     }
   }
-
-  .about-image {
-    display: flex;
-    justify-content: center;
-        
-    #photo {
-      bottom: 90px;
-      height: 450px;
-      position: relative;
-            
-
-      @media (min-width: 760px) and (max-width: 1080px) {
-        bottom: 0;
-        height: 400px;
-        margin-top: 10px;
-        width: 450px;
-               
-      }
-
-      @media (max-width: 576px) {
-        bottom: 0;
-        height: 300px;
-        margin-top: 10px;
-        width: 350px;
-                
-      }
-    }
-  }
-
-  .about-text {
-    padding: 35px;
-        
-    h3 {
-      font-size: 32px;
-      text-align: center;
-    }
-
-    p {
-      font-size: 18px;
-    }
-       
-  }
-
-    
 }
 
-.container-recentarticles {
+.about__image {
+  display: flex;
+  justify-content: center;
+        
+  .photo {
+    bottom: 90px;
+    height: 450px;
+    position: relative;
+            
+
+    @media (min-width: 760px) and (max-width: 1080px) {
+      bottom: 0;
+      height: 400px;
+      margin-top: 10px;
+      width: 450px;
+               
+    }
+
+    @media (max-width: 576px) {
+      bottom: 0;
+      height: 300px;
+      margin-top: 10px;
+      width: 350px;
+                
+    }
+  }
+}
+
+.about__text {
+   
+  padding: 35px;
+        
+  h3 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+    margin-top: 2rem;
+  }
+       
+}
+
+
+.recentarticles {
   align-items: center;
   background-color: $colour-secondary;
   display: flex;
@@ -78,12 +79,15 @@
   padding: 10px;
 
     
-  .RecentArticleCard {
-    color: black;
+  .recentarticle__card p {
+    color: $colour-heading;
     font-size: 26px;
-    width: 100%;
-        
+		
+    @media (max-width: 768px) {
+      font-size: 22px;			
+    }
   }
+	
 }
 
 

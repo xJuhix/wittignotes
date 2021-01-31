@@ -21,10 +21,10 @@ export function Home() {
 
       <Container className="about">
         <Row>
-          <Col lg={5} className="about-image">
-            <img src={Felix} id="photo" alt="Felix Wittig" />
+          <Col lg={5} className="about__image">
+            <img src={Felix} className="photo" alt="Felix Wittig" />
           </Col>
-          <Col lg={7} className="about-text">
+          <Col lg={7} className="about__text">
             <h3>Felix Wittig</h3>
             <p>
               Hi friends,
@@ -38,7 +38,7 @@ export function Home() {
 
       <h2>Recent Articles</h2>
 
-      <div className="container-recentarticles">
+      <div className="recentarticles">
 
         <RecentArticles />
 
