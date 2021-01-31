@@ -18,7 +18,7 @@ export function Books() {
               <q className="mb-0">There is more treasure in books than in all the pirate’s loot on Treasure Island.</q>
               <footer className="blockquote-footer">Walt Disney</footer>
             </blockquote>
-            <div className="category__text">
+            <div className="category__text description">
               <p>
                 If I had to put a price tag on the insights I have gained from books
                 I don't think I could. Books offer a tremendous amount of value and
@@ -36,7 +36,7 @@ export function Books() {
             </div>
           </Col>
           <Col sm={12} lg={5} className="category__image">
-            <img src={BookImg} className="image-category" alt="Bookshelf and lamp" />
+            <img src={BookImg} className="image" alt="Book, tea, applewatch and plant" />
           </Col>
         </Row>
       </div>

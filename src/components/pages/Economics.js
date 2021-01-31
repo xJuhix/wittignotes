@@ -18,7 +18,7 @@ export function Economics() {
               <q className="mb-0">Economics is everywhere, and understanding economics can help you make better decisions and lead a happier life.</q>
               <footer className="blockquote-footer">Tyler Cowen</footer>
             </blockquote>
-            <div className="category__text">
+            <div className="category__text description">
               <p>
                 For me economics explains everything. One can have the
                 best idea in the world but if the idea doesn't make financial
@@ -29,7 +29,7 @@ export function Economics() {
             </div>
           </Col>
           <Col sm={12} lg={6} className="category__image">
-            <img src={Piggybank} className="image-category" alt="Black piggybank on coins" />
+            <img src={Piggybank} className="image" alt="Pink piggybank" />
           </Col>
         </Row>
       </div>

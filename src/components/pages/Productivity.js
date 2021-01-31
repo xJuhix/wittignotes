@@ -17,7 +17,7 @@ export function Productivity() {
               <q className="mb-0">Focus on being productive instead of busy.</q>
               <footer className="blockquote-footer">Tim Ferris</footer>
             </blockquote>
-            <div className="category__text">
+            <div className="category__text description">
               <p>
                 We all are very busy especially in the 21st century.
                 With all these distractions around us staying productive
@@ -31,7 +31,7 @@ export function Productivity() {
             </div>
           </Col>
           <Col sm={12} lg={6} className="category__image">
-            <img src={ProductivityImg} className="image-category" alt="Computer and plant" />
+            <img src={ProductivityImg} className="image" alt="Computer and plant" />
           </Col>
         </Row>
       </div>
