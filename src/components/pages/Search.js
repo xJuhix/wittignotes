@@ -11,7 +11,6 @@ export function AllArticles() {
         <ArticleList />
         <Footer />
       </div>
-
     </>
   );
 }

@@ -3,9 +3,8 @@
 $font-h1: 'Cormorant Garamond Bold', serif;
 $font-h2: 'Montserrat Bold', sans-serif;
 $font-h3: 'Montserrat', sans-serif;
-$font-navlink: 'Playfair Display' , serif;
+$font-navlink: 'Playfair Display', serif;
 $font-p: 'Open Sans', sans-serif;
-
 
 h1 {
   color: $colour-heading;
@@ -16,8 +15,8 @@ h2 {
   color: $colour-secondary;
   font-family: $font-h2;
   text-align: center;
-	text-decoration: underline $colour-blue 3px;
-	width: auto;
+  text-decoration: underline $colour-blue 3px;
+  width: auto;
 }
 
 h3 {
@@ -39,6 +38,4 @@ q {
   font-family: $font-navlink;
   font-size: 32px;
   text-align: center;
-   
 }
-

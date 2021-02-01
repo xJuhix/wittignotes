@@ -29,19 +29,17 @@
 .about__image {
   display: flex;
   justify-content: center;
-        
+
   .photo {
     bottom: 90px;
     height: 450px;
     position: relative;
-            
 
     @media (min-width: 760px) and (max-width: 1080px) {
       bottom: 0;
       height: 400px;
       margin-top: 10px;
       width: 450px;
-               
     }
 
     @media (max-width: 576px) {
@@ -49,15 +47,13 @@
       height: 300px;
       margin-top: 10px;
       width: 350px;
-                
     }
   }
 }
 
 .about__text {
-   
   padding: 35px;
-        
+
   h3 {
     font-size: 32px;
     text-align: center;
@@ -67,9 +63,7 @@
     font-size: 18px;
     margin-top: 2rem;
   }
-       
 }
-
 
 .recentarticles {
   align-items: center;
@@ -78,17 +72,12 @@
   flex-direction: column;
   padding: 10px;
 
-    
   .recentarticle__card p {
     color: $colour-heading;
     font-size: 26px;
-		
+
     @media (max-width: 768px) {
-      font-size: 22px;			
+      font-size: 22px;
     }
   }
-	
 }
-
-
-

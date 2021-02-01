@@ -9,7 +9,6 @@ import ErrorMessage from './ErrorMessage';
 import Heading from '../layout/Heading';
 
 const schema = yup.object().shape({
-
   firstName: yup
     .string()
     .required('First name is required')
@@ -47,43 +46,85 @@ function ContactForm() {
     <div className="contact">
       <Form className="form" onSubmit={handleSubmit(onSubmit)}>
         {sent && (
-        <div className="validationMessage">
-          <h3>Thank you!</h3>
-          <p>
-            Your message has been successfully sent.
-            I will get back to you as soon as possible!
-          </p>
-        </div>
+          <div className="validationMessage">
+            <h3>Thank you!</h3>
+            <p>
+              Your message has been successfully sent. I will get back
+              to you as soon as possible!
+            </p>
+          </div>
         )}
         <Heading className="form__title" title="Contact Me" />
         <Form.Group>
-          <Form.Label className="form-group__label">First name:</Form.Label>
-          <Form.Control className="form-group__input" type="text" name="firstName" placeholder="Enter your first name" ref={register} />
-          {errors.firstName && <ErrorMessage>{errors.firstName.message}</ErrorMessage>}
+          <Form.Label className="form-group__label">
+            First name:
+          </Form.Label>
+          <Form.Control
+            className="form-group__input"
+            type="text"
+            name="firstName"
+            placeholder="Enter your first name"
+            ref={register}
+          />
+          {errors.firstName && (
+            <ErrorMessage>{errors.firstName.message}</ErrorMessage>
+          )}
         </Form.Group>
 
         <Form.Group>
-          <Form.Label className="form-group__label">Last name:</Form.Label>
-          <Form.Control className="form-group__input" type="text" name="lastName" placeholder="Enter your Last name" ref={register} />
-          {errors.lastName && <ErrorMessage>{errors.lastName.message}</ErrorMessage>}
+          <Form.Label className="form-group__label">
+            Last name:
+          </Form.Label>
+          <Form.Control
+            className="form-group__input"
+            type="text"
+            name="lastName"
+            placeholder="Enter your Last name"
+            ref={register}
+          />
+          {errors.lastName && (
+            <ErrorMessage>{errors.lastName.message}</ErrorMessage>
+          )}
         </Form.Group>
 
         <Form.Group>
-          <Form.Label className="form-group__label">Email:</Form.Label>
-          <Form.Control className="form-group__input" type="text" name="email" placeholder="Enter your Email" ref={register} />
-          {errors.email && <ErrorMessage>{errors.email.message}</ErrorMessage>}
+          <Form.Label className="form-group__label">
+            Email:
+          </Form.Label>
+          <Form.Control
+            className="form-group__input"
+            type="text"
+            name="email"
+            placeholder="Enter your Email"
+            ref={register}
+          />
+          {errors.email && (
+            <ErrorMessage>{errors.email.message}</ErrorMessage>
+          )}
         </Form.Group>
 
         <Form.Group>
-          <Form.Label className="form-group__label">Message:</Form.Label>
-          <Form.Control className="form-group__input" as="textarea" name="messageField" type="text" placeholder="Enter your Message" ref={register} />
-          {errors.messageField && <ErrorMessage>{errors.messageField.message}</ErrorMessage>}
+          <Form.Label className="form-group__label">
+            Message:
+          </Form.Label>
+          <Form.Control
+            className="form-group__input"
+            as="textarea"
+            name="messageField"
+            type="text"
+            placeholder="Enter your Message"
+            ref={register}
+          />
+          {errors.messageField && (
+            <ErrorMessage>{errors.messageField.message}</ErrorMessage>
+          )}
         </Form.Group>
 
-        <Button variant="submit" size="lg" type="submit">Send</Button>
+        <Button variant="submit" size="lg" type="submit">
+          Send
+        </Button>
       </Form>
     </div>
-
   );
 }
 

@@ -3,7 +3,10 @@ import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {
-  BrowserRouter as Router, Switch, Route, NavLink,
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
 } from 'react-router-dom';
 import Home from '../pages/Home';
 import Books from '../pages/Books';

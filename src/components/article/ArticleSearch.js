@@ -6,7 +6,10 @@ import FormControl from 'react-bootstrap/FormControl';
 function ArticleSearch({ handleSearch }) {
   return (
     <InputGroup className="search">
-      <FormControl placeholder="Search by name..." onChange={(event) => handleSearch(event)} />
+      <FormControl
+        placeholder="Search by name..."
+        onChange={(event) => handleSearch(event)}
+      />
     </InputGroup>
   );
 }

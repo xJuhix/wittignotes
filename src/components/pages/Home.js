@@ -27,10 +27,11 @@ export function Home() {
           <Col lg={7} className="about__text">
             <h3>Felix Wittig</h3>
             <p>
-              Hi friends,
-              my name is Felix and I am a Business Administration student based in Germany
-              and I truly believe that most of worlds problems can be solved with good economics.
-              I also love reading and am an absolute productivity nerd.
+              Hi friends, my name is Felix and I am a Business
+              Administration student based in Germany and I truly
+              believe that most of worlds problems can be solved with
+              good economics. I also love reading and am an absolute
+              productivity nerd.
             </p>
           </Col>
         </Row>
@@ -39,13 +40,10 @@ export function Home() {
       <h2>Recent Articles</h2>
 
       <div className="recentarticles">
-
         <RecentArticles />
-
       </div>
 
       <Footer />
-
     </>
   );
 }

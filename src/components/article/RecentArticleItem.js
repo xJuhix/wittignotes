@@ -3,28 +3,17 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 
-function RecentArticleItem({
-  title, date_, category_, id,
-}) {
+function RecentArticleItem({ title, date_, category_, id }) {
   return (
     <>
       <div className="recentarticle__card">
-
         <Link to={`/article/${id}`}>
           <Row>
             <p>
-              {title}
-              ,
-              {' '}
-              {category_}
-              ,
-              {' '}
-              {date_}
-              {' '}
+              {title}, {category_}, {date_}{' '}
             </p>
           </Row>
         </Link>
-
       </div>
     </>
   );

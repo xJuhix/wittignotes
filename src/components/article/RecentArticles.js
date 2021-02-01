@@ -21,9 +21,7 @@ function RecentArticles() {
 
   return (
     <>
-
       {articles.map((recent) => (
-
         <Col sm={6} md={3} key={recent.id}>
           <RecentArticleItem
             id={recent.id}
@@ -32,9 +30,7 @@ function RecentArticles() {
             title={recent.title.rendered}
           />
         </Col>
-
       ))}
-
     </>
   );
 }
