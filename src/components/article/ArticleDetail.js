@@ -34,36 +34,33 @@ function ArticleDetails() {
       <div className="article">
         {article && (
           <>
-            <div className="article__header">
+            <div>
               <Container>
                 <h3 className="article__subtitle">
                   {article.acf.category_}
                 </h3>
-                <Heading
-                  className="article__title"
-                  title={article.title.rendered}
-                />
-                <Col className=" article__header--image">
+                <Heading title={article.title.rendered} />
+                <Col className=" article__image">
                   <Image
                     src={article.acf.image_.url}
                     width="100%"
                     className="article-img"
                   />
                 </Col>
-                <Row className="article-info">
-                  <p className="article__header--item">
+                <Row className="article__details">
+                  <p>
                     <span>
                       <FaUser size="1em" />
                     </span>
                     {article.acf.author_}
                   </p>
-                  <p className="article__header--item">
+                  <p>
                     <span>
                       <FaClock size="1rem" />
                     </span>
                     {article.acf.readtime_}
                   </p>
-                  <p className="article__header--item">
+                  <p>
                     <span>
                       <FaCalendarDay size="1rem" />
                     </span>
@@ -73,7 +70,7 @@ function ArticleDetails() {
               </Container>
             </div>
             <Container className="article__body">
-              <Col className="article__body--text">
+              <Col className="article__content">
                 <p
                   dangerouslySetInnerHTML={{
                     __html: article.excerpt.rendered,

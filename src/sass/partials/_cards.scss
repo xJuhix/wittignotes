@@ -12,19 +12,10 @@
     box-shadow: 6px 6px 6px 6px $colour-blue;
   }
 
-  .card__image {
+  &__image {
     height: 180px;
     margin: 0;
     width: 250;
-  }
-
-  .card__body {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card__title {
-    font-size: 1.5rem;
   }
 
   .btn-submit {

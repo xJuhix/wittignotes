@@ -3,50 +3,40 @@
   margin-bottom: 5rem;
   margin-top: 5rem;
 
-  .article__header {
-    h1 {
-      padding-top: 3rem;
-      text-align: center;
-    }
+  &__subtitle {
+    color: $colour-blue;
+    padding-top: 3rem;
+    text-align: center;
+    text-decoration: underline $colour-blue;
+  }
 
-    h3 {
-      color: $colour-blue;
-      padding-top: 3rem;
-      text-align: center;
-      text-decoration: underline $colour-blue;
-    }
 
-    .article__header--image {
-      display: block;
-      margin-bottom: 3rem;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 3rem;
+  &__image {
+    display: block;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
 
-      .article-img {
-        max-height: 900px;
-        width: 100%;
-      }
-    }
-
-    .article-info {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      padding: 10px;
+    .article-img {
+      max-height: 900px;
+      width: 100%;
     }
   }
 
-  .article__body {
+  &__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  &__body {
     padding-bottom: 20px;
 
-    .article__body--text {
+    &__content {
       margin-bottom: 3rem;
       margin-top: 4rem;
-
-      p {
-        font-size: 1.2rem;
-      }
     }
   }
 }

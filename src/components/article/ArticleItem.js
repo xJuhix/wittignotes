@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
@@ -14,10 +15,10 @@ function ArticleItem({
   category_,
 }) {
   return (
-    <Card>
+    <Card className="card">
       <Card.Img className="card__image" variant="top" src={image_} />
-      <Card.Body className="card__body">
-        <Card.Title className="card__title">{title}</Card.Title>
+      <Card.Body>
+        <Card.Title>{title}</Card.Title>
         <Card.Text
           className="card__excerpt"
           dangerouslySetInnerHTML={{ __html: excerpt }}
@@ -25,16 +26,21 @@ function ArticleItem({
         <Card.Text className="card__info">
           <span>
             <FaClock size="1rem" />
-          </span>{' '}
-          Read-time: {readtime_}{' '}
+          </span>
+          {' '}
+          Read-time:
+          {readtime_}
+          {' '}
         </Card.Text>
         <Card.Text>
           <span>
             <FaFolder size="1rem" />
-          </span>{' '}
-          {category_}{' '}
+          </span>
+          {' '}
+          {category_}
+          {' '}
         </Card.Text>
-        <Link to={`/article/${id}`} className="card__action">
+        <Link to={`/article/${id}`}>
           <Button
             variant="submit"
             block
