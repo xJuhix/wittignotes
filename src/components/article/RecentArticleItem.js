@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable object-curly-newline */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
@@ -6,11 +8,17 @@ import Row from 'react-bootstrap/Row';
 function RecentArticleItem({ title, date_, category_, id }) {
   return (
     <>
-      <div className="recentarticle__card">
+      <div>
         <Link to={`/article/${id}`}>
           <Row>
-            <p>
-              {title}, {category_}, {date_}{' '}
+            <p className="recentarticle__card">
+              {title}
+              ,
+              {category_}
+              ,
+              {date_}
+              ,
+              {' '}
             </p>
           </Row>
         </Link>

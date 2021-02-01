@@ -6,7 +6,7 @@ import Footer from '../layout/Footer';
 export function AllArticles() {
   return (
     <>
-      <div className="searchpage">
+      <div className="search__page">
         <Heading title="Search Articles" />
         <ArticleList />
         <Footer />

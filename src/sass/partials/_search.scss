@@ -1,21 +1,20 @@
-.searchpage {
+.search__page {
   h1 {
     color: $colour-secondary;
     margin-top: 3rem;
     text-align: center;
   }
+}
+.search__bar {
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+	width: 80% !important;
 
-  .search {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
-    width: 80% !important;
-
-    .form-control {
-      font-size: 18px;
-      height: 3rem;
-    }
-  }
+	.form-control{
+		font-size: 18px;
+		height: 3rem;
+	}
 }

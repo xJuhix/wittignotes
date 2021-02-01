@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/jsx-no-bind */
 /* eslint-disable no-console */
 /* eslint-disable no-underscore-dangle */
@@ -28,9 +29,7 @@ function AllArticles() {
   const searchArticles = function (event) {
     console.log(event.target.value);
     const searchText = event.target.value.toLowerCase();
-    const filteredArray = articles.filter((article) =>
-      article.title.rendered.toLowerCase().includes(searchText),
-    );
+    const filteredArray = articles.filter((article) => article.title.rendered.toLowerCase().includes(searchText));
     setFilteredArticles(filteredArray);
   };
 

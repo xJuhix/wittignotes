@@ -23,46 +23,47 @@
     @media (min-width: 300px) and (max-width: 1080px) {
       height: auto;
     }
-  }
-}
-
-.about__image {
+	}
+	
+	&__image {
   display: flex;
   justify-content: center;
 
-  .photo {
-    bottom: 90px;
-    height: 450px;
-    position: relative;
+		.photo {
+			bottom: 90px;
+			height: 450px;
+			position: relative;
 
-    @media (min-width: 760px) and (max-width: 1080px) {
-      bottom: 0;
-      height: 400px;
-      margin-top: 10px;
-      width: 450px;
-    }
+			@media (min-width: 760px) and (max-width: 1080px) {
+				bottom: 0;
+				height: 400px;
+				margin-top: 10px;
+				width: 450px;
+			}
 
-    @media (max-width: 576px) {
-      bottom: 0;
-      height: 300px;
-      margin-top: 10px;
-      width: 350px;
-    }
-  }
-}
+			@media (max-width: 576px) {
+				bottom: 0;
+				height: 300px;
+				margin-top: 10px;
+				width: 350px;
+			}
+		}
+	}
 
-.about__text {
+	&__text {
   padding: 35px;
 
-  h3 {
-    font-size: 32px;
-    text-align: center;
-  }
+		h3 {
+			font-size: 32px;
+			text-align: center;
+		}
 
-  p {
-    font-size: 18px;
-    margin-top: 2rem;
-  }
+		p {
+			font-size: 18px;
+			margin-top: 2rem;
+		}
+	}	
+
 }
 
 .recentarticles {
@@ -72,9 +73,10 @@
   flex-direction: column;
   padding: 10px;
 
-  .recentarticle__card p {
+  .recentarticle__card {
+		padding-top: 20px;
     color: $colour-heading;
-    font-size: 26px;
+		font-size: 26px;
 
     @media (max-width: 768px) {
       font-size: 22px;
