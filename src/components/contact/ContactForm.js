@@ -44,7 +44,10 @@ function ContactForm() {
 
   return (
     <div className="contact">
-      <Form className="form" onSubmit={handleSubmit(onSubmit)}>
+      <Form
+        className="contact__form"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         {sent && (
           <div className="validationMessage">
             <h3>Thank you!</h3>
@@ -54,13 +57,10 @@ function ContactForm() {
             </p>
           </div>
         )}
-        <Heading className="form__title" title="Contact Me" />
+        <Heading title="Contact Me" />
         <Form.Group>
-          <Form.Label className="form-group__label">
-            First name:
-          </Form.Label>
+          <Form.Label>First name:</Form.Label>
           <Form.Control
-            className="form-group__input"
             type="text"
             name="firstName"
             placeholder="Enter your first name"
@@ -72,11 +72,8 @@ function ContactForm() {
         </Form.Group>
 
         <Form.Group>
-          <Form.Label className="form-group__label">
-            Last name:
-          </Form.Label>
+          <Form.Label>Last name:</Form.Label>
           <Form.Control
-            className="form-group__input"
             type="text"
             name="lastName"
             placeholder="Enter your Last name"
@@ -88,11 +85,8 @@ function ContactForm() {
         </Form.Group>
 
         <Form.Group>
-          <Form.Label className="form-group__label">
-            Email:
-          </Form.Label>
+          <Form.Label>Email:</Form.Label>
           <Form.Control
-            className="form-group__input"
             type="text"
             name="email"
             placeholder="Enter your Email"
@@ -104,11 +98,8 @@ function ContactForm() {
         </Form.Group>
 
         <Form.Group>
-          <Form.Label className="form-group__label">
-            Message:
-          </Form.Label>
+          <Form.Label>Message:</Form.Label>
           <Form.Control
-            className="form-group__input"
             as="textarea"
             name="messageField"
             type="text"

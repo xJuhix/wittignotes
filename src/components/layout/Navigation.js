@@ -22,7 +22,7 @@ function Navigation() {
     <Router>
       <Navbar className="nav" expand="xl">
         <NavLink to="/" exact>
-          <Navbar.Brand className="logo nav__item">
+          <Navbar.Brand>
             <img
               src={logo}
               className="d-inline-block align-top nav__brand"

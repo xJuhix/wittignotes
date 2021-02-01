@@ -14,8 +14,8 @@ export function Economics() {
         <Row>
           <Col sm={12} lg={6} className="category__content">
             <Heading title="Economics" />
-            <blockquote className="category__blockquote blockquote ">
-              <q className="mb-0">
+            <blockquote className="category__blockquote">
+              <q>
                 Economics is everywhere, and understanding economics
                 can help you make better decisions and lead a happier
                 life.
@@ -24,7 +24,7 @@ export function Economics() {
                 Tyler Cowen
               </footer>
             </blockquote>
-            <div className="category__text description">
+            <div className="category__text">
               <p>
                 For me economics explains everything. One can have the
                 best idea in the world but if the idea doesn't make
@@ -46,7 +46,7 @@ export function Economics() {
       </div>
 
       <h2>Economics Articles</h2>
-      <div className="category-articles">
+      <div>
         <EconomicsArticles />
       </div>
 

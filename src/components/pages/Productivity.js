@@ -13,15 +13,13 @@ export function Productivity() {
         <Row>
           <Col sm={12} lg={6} className="category__content">
             <Heading title="Productivity" />
-            <blockquote className="category__blockquote blockquote ">
-              <q className="mb-0">
-                Focus on being productive instead of busy.
-              </q>
+            <blockquote className="category__blockquote">
+              <q>Focus on being productive instead of busy.</q>
               <footer className="blockquote-footer">
                 Tim Ferris
               </footer>
             </blockquote>
-            <div className="category__text description">
+            <div className="category__text">
               <p>
                 We all are very busy especially in the 21st century.
                 With all these distractions around us staying
@@ -46,7 +44,7 @@ export function Productivity() {
       </div>
 
       <h2>Productivity Articles</h2>
-      <div className="category__articles">
+      <div>
         <ProductivityArticles />
       </div>
       <Footer />

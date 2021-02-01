@@ -73,11 +73,6 @@ function ArticleDetails() {
               <Col className="article__content">
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: article.excerpt.rendered,
-                  }}
-                />
-                <p
-                  dangerouslySetInnerHTML={{
                     __html: article.content.rendered,
                   }}
                 />
