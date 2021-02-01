@@ -42,7 +42,7 @@
     margin-top: 3rem;
     max-width: 700px;
 
-    @media only screen and (max-width: 576px) {
+    @media (max-width: 576px) {
       margin-left: 0.5rem;
       padding: 5px;
       width: auto;
@@ -55,10 +55,12 @@
   }
 	&__image{
 		max-height: 800px;
+
+		.image {
+			height: 100%;
+			width: 100%;
+		}
+
 	}
 	
-}
-.image {
-	height: 100%;
-	width: 100%;
 }
