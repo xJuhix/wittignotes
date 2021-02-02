@@ -10,7 +10,6 @@ import Image from 'react-bootstrap/Image';
 import { FaClock, FaUser, FaCalendarDay } from 'react-icons/fa';
 import { BASE_URL } from '../../constants/api';
 import Heading from '../layout/Heading';
-import Footer from '../layout/Footer';
 
 function ArticleDetails() {
   const [article, setArticle] = useState(false);
@@ -81,9 +80,6 @@ function ArticleDetails() {
           </>
         )}
       </div>
-      <>
-        <Footer />
-      </>
     </>
   );
 }

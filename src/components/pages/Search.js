@@ -1,7 +1,6 @@
 import React from 'react';
 import Heading from '../layout/Heading';
 import ArticleList from '../article/ArticleList';
-import Footer from '../layout/Footer';
 
 export function AllArticles() {
   return (
@@ -9,7 +8,6 @@ export function AllArticles() {
       <div className="search__page">
         <Heading title="Search Articles" />
         <ArticleList />
-        <Footer />
       </div>
     </>
   );

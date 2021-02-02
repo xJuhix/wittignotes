@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Heading from '../layout/Heading';
 import Felix from '../../images/fw.png';
-import Footer from '../layout/Footer';
 import RecentArticles from '../article/RecentArticles';
 
 export function Home() {
@@ -42,8 +41,6 @@ export function Home() {
       <div className="recentarticles">
         <RecentArticles />
       </div>
-
-      <Footer />
     </>
   );
 }

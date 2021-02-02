@@ -4,7 +4,6 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Heading from '../layout/Heading';
 import EconomicsArticles from '../article/EconomicsArticles';
-
 import Piggybank from '../../images/piggybank.jpg';
 
 export function Economics() {
