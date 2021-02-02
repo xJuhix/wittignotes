@@ -6,7 +6,6 @@ import Col from 'react-bootstrap/Col';
 import Heading from '../layout/Heading';
 import BookImg from '../../images/book.jpg';
 import BookArticles from '../article/BookArticles';
-import Footer from '../layout/Footer';
 
 export function Books() {
   return (
@@ -63,8 +62,6 @@ export function Books() {
       <div>
         <BookArticles />
       </div>
-
-      <Footer />
     </>
   );
 }
