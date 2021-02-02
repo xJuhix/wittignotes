@@ -15,7 +15,7 @@ import Productivity from '../pages/Productivity';
 import Contact from '../pages/Contact';
 import Search from '../pages/Search';
 import ArticleDetail from '../article/ArticleDetail';
-import logo from '../images/logo.png';
+import logo from '../../images/logo.png';
 
 function Navigation() {
   return (

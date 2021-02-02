@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Heading from '../layout/Heading';
 import ProductivityArticles from '../article/ProductivityArticles';
 import Footer from '../layout/Footer';
-import ProductivityImg from '../images/productivityimg.jpg';
+import ProductivityImg from '../../images/productivityimg.jpg';
 
 export function Productivity() {
   return (

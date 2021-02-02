@@ -4,7 +4,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Heading from '../layout/Heading';
-import BookImg from '../images/book.jpg';
+import BookImg from '../../images/book.jpg';
 import BookArticles from '../article/BookArticles';
 import Footer from '../layout/Footer';
 
