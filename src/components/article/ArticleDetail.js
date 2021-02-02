@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-danger */
 /* eslint-disable no-console */
 /* eslint-disable no-underscore-dangle */
@@ -11,37 +12,50 @@ import { FaClock, FaUser, FaCalendarDay } from 'react-icons/fa';
 import { BASE_URL } from '../../constants/api';
 import Heading from '../layout/Heading';
 
-function ArticleDetails() {
-  const [article, setArticle] = useState(false);
-
-  const { id } = useParams();
-
-  const url = `${BASE_URL}/${id}`;
+const useRemoteData = (url, initialData = null) => {
+  const [remoteData, setRemoteData] = useState({
+    data: initialData,
+    loading: false,
+    error: null,
+  });
 
   useEffect(() => {
+    setRemoteData((prev) => ({ ...prev, loading: true }));
+
     fetch(url)
       .then((response) => response.json())
-      .then((json) => {
-        setArticle(json);
-        console.log(json);
+      .then((data) => {
+        setRemoteData((prev) => ({ ...prev, data }));
       })
-      .catch((error) => console.log(error));
+      .catch(({ message }) => {
+        setRemoteData((prev) => ({ ...prev, error: message }));
+      })
+      .finally(() => {
+        setRemoteData((prev) => ({ ...prev, loading: false }));
+      });
   }, [url]);
+
+  return remoteData;
+};
+
+function ArticleDetails() {
+  const { id } = useParams();
+  const { data, loading, error } = useRemoteData(`${BASE_URL}/${id}`);
 
   return (
     <>
       <div className="article">
-        {article && (
+        {data && (
           <>
             <div>
               <Container>
                 <h3 className="article__subtitle">
-                  {article.acf.category_}
+                  {data.acf.category_}
                 </h3>
-                <Heading title={article.title.rendered} />
+                <Heading title={data.title.rendered} />
                 <Col className=" article__image">
                   <Image
-                    src={article.acf.image_.url}
+                    src={data.acf.image_.url}
                     width="100%"
                     className="article-img"
                   />
@@ -51,19 +65,19 @@ function ArticleDetails() {
                     <span>
                       <FaUser size="1em" />
                     </span>
-                    {article.acf.author_}
+                    {data.acf.author_}
                   </p>
                   <p>
                     <span>
                       <FaClock size="1rem" />
                     </span>
-                    {article.acf.readtime_}
+                    {data.acf.readtime_}
                   </p>
                   <p>
                     <span>
                       <FaCalendarDay size="1rem" />
                     </span>
-                    {article.acf.date_}
+                    {data.acf.date_}
                   </p>
                 </Row>
               </Container>
@@ -72,7 +86,7 @@ function ArticleDetails() {
               <Col className="article__content">
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: article.content.rendered,
+                    __html: data.content.rendered,
                   }}
                 />
               </Col>
