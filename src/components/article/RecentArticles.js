@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-underscore-dangle */
 import React, { useState, useEffect } from 'react';
 import Col from 'react-bootstrap/Col';
@@ -8,6 +9,7 @@ import RecentArticleItem from './RecentArticleItem';
 function RecentArticles() {
   const [articles, setRecentArticles] = useState([]);
   const url = RECENTARTICLES_URL;
+  const [hasError, setError] = useState(false);
 
   // Getting the articles from API
   useEffect(() => {
@@ -16,7 +18,9 @@ function RecentArticles() {
       .then((json) => {
         setRecentArticles(json);
       })
-      .catch((error) => console.log(error));
+      .catch(() => {
+        setError(true);
+      });
   }, [url]);
 
   return (

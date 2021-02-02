@@ -1,4 +1,4 @@
-/* eslint-disable prettier/prettier */
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-no-bind */
 /* eslint-disable no-console */
 /* eslint-disable no-underscore-dangle */
@@ -13,6 +13,7 @@ import ArticleItem from './ArticleItem';
 function AllArticles() {
   const [articles, setArticles] = useState([]);
   const [filtredArticles, setFilteredArticles] = useState([]);
+  const [hasError, setError] = useState(false);
 
   // Getting the articles from API
   useEffect(() => {
@@ -22,13 +23,16 @@ function AllArticles() {
         setArticles(json);
         setFilteredArticles(json);
       })
-      .catch((error) => console.log(error));
+      .catch(() => {
+        setError(true);
+      });
   }, []);
 
   // eslint-disable-next-line func-names
   const searchArticles = function (event) {
     console.log(event.target.value);
     const searchText = event.target.value.toLowerCase();
+    // eslint-disable-next-line prettier/prettier
     const filteredArray = articles.filter((article) => article.title.rendered.toLowerCase().includes(searchText));
     setFilteredArticles(filteredArray);
   };

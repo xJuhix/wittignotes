@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 /* eslint-disable no-underscore-dangle */
 import React, { useState, useEffect } from 'react';
@@ -9,6 +10,7 @@ import ArticleItem from './ArticleItem';
 function BookArticles() {
   const [articles, setBookArticles] = useState([]);
   const url = BOOK_URL;
+  const [hasError, setError] = useState(false);
 
   // Getting the articles from API
   useEffect(() => {
@@ -17,7 +19,9 @@ function BookArticles() {
       .then((json) => {
         setBookArticles(json);
       })
-      .catch((error) => console.log(error));
+      .catch(() => {
+        setError(true);
+      });
   }, [url]);
 
   return (

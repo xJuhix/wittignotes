@@ -12,50 +12,40 @@ import { FaClock, FaUser, FaCalendarDay } from 'react-icons/fa';
 import { BASE_URL } from '../../constants/api';
 import Heading from '../layout/Heading';
 
-const useRemoteData = (url, initialData = null) => {
-  const [remoteData, setRemoteData] = useState({
-    data: initialData,
-    loading: false,
-    error: null,
-  });
+function ArticleDetails() {
+  const [article, setArticle] = useState(null);
+  const [hasError, setError] = useState(false);
+
+  const { id } = useParams();
+
+  const url = `${BASE_URL}/${id}`;
 
   useEffect(() => {
-    setRemoteData((prev) => ({ ...prev, loading: true }));
-
     fetch(url)
       .then((response) => response.json())
-      .then((data) => {
-        setRemoteData((prev) => ({ ...prev, data }));
+      .then((json) => {
+        setArticle(json);
+        console.log(json);
       })
-      .catch(({ message }) => {
-        setRemoteData((prev) => ({ ...prev, error: message }));
-      })
-      .finally(() => {
-        setRemoteData((prev) => ({ ...prev, loading: false }));
+      .catch(() => {
+        setError(true);
       });
   }, [url]);
-
-  return remoteData;
-};
-
-function ArticleDetails() {
-  const { id } = useParams();
-  const { data, loading, error } = useRemoteData(`${BASE_URL}/${id}`);
 
   return (
     <>
       <div className="article">
-        {data && (
+        {article && (
           <>
             <div>
               <Container>
                 <h3 className="article__subtitle">
-                  {data.acf.category_}
+                  {article.acf.category_}
                 </h3>
-                <Heading title={data.title.rendered} />
-                <Col className=" article__image">
+                <Heading title={article.title.rendered} />
+                <Col article=" article__image">
                   <Image
-                    src={data.acf.image_.url}
+                    src={article.acf.image_.url}
                     width="100%"
                     className="article-img"
                   />
@@ -65,19 +55,19 @@ function ArticleDetails() {
                     <span>
                       <FaUser size="1em" />
                     </span>
-                    {data.acf.author_}
+                    {article.acf.author_}
                   </p>
                   <p>
                     <span>
                       <FaClock size="1rem" />
                     </span>
-                    {data.acf.readtime_}
+                    {article.acf.readtime_}
                   </p>
                   <p>
                     <span>
                       <FaCalendarDay size="1rem" />
                     </span>
-                    {data.acf.date_}
+                    {article.acf.date_}
                   </p>
                 </Row>
               </Container>
@@ -86,7 +76,7 @@ function ArticleDetails() {
               <Col className="article__content">
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: data.content.rendered,
+                    __html: article.content.rendered,
                   }}
                 />
               </Col>

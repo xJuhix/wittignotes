@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable no-underscore-dangle */
-
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,6 +11,7 @@ import ArticleItem from './ArticleItem';
 function EconomicsArticles() {
   const [articles, setEconomicsArticles] = useState([]);
   const url = ECONOMICS_URL;
+  const [hasError, setError] = useState(false);
 
   // Getting the articles from API
   useEffect(() => {
@@ -19,7 +20,9 @@ function EconomicsArticles() {
       .then((json) => {
         setEconomicsArticles(json);
       })
-      .catch((error) => console.log(error));
+      .catch(() => {
+        setError(true);
+      });
   }, [url]);
 
   return (
