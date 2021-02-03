@@ -18,13 +18,15 @@ export function Home() {
         </Container>
       </Jumbotron>
 
-      <Link to="/search/">
-        {' '}
-        <Button variant="browse" size="lg">
+      <div className="articlebrowse">
+        <Link to="/search/">
           {' '}
-          Browse Articles
-        </Button>
-      </Link>
+          <Button variant="browse" size="lg">
+            {' '}
+            Browse Articles
+          </Button>
+        </Link>
+      </div>
 
       <h2>Meet Me</h2>
 

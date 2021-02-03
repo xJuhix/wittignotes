@@ -7,19 +7,28 @@
   width: 100%;
 }
 
+
+.articlebrowse{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 200px;
+
 .btn-browse {
 	background-color: $colour-secondary;
 	border-radius: 0;
-	display: flex;
-	justify-content: center;
-	
+	width: 400px;
 	margin-top: 3rem;
+	font-size: 28px;
+	font-family: $font-navlink;
+	font-weight: 500;
 	
 
 	&:hover {
 		background-color: $colour-blue;
 		color: $colour-secondary;
 	}
+}
 }
 
 
