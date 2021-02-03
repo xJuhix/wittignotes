@@ -28,12 +28,12 @@ export function Home() {
 
       <h2>Meet Me</h2>
 
-      <Container className="about">
+      <div className="about">
         <Row>
-          <Col lg={5} className="about__image">
+          <Col className="about__image">
             <img src={Felix} className="photo" alt="Felix Wittig" />
           </Col>
-          <Col lg={7} className="about__text">
+          <Col className="about__text">
             <h3>Felix Wittig</h3>
             <p>
               Hi friends, my name is Felix and I am a Business
@@ -44,11 +44,10 @@ export function Home() {
             </p>
           </Col>
         </Row>
-      </Container>
+      </div>
 
       <h2>Recent Articles</h2>
-
-      <div className="recentarticles">
+      <div>
         <RecentArticles />
       </div>
     </>

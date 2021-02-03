@@ -82,20 +82,3 @@
 
 }
 
-.recentarticles {
-  align-items: center;
-  background-color: $colour-secondary;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-
-  .recentarticle__card {
-		padding-top: 20px;
-    color: $colour-heading;
-		font-size: 26px;
-
-    @media (max-width: 768px) {
-      font-size: 22px;
-    }
-  }
-}

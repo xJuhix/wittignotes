@@ -2,11 +2,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-underscore-dangle */
 import React, { useState, useEffect } from 'react';
+import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Spinner from 'react-bootstrap/Spinner';
 import Alert from 'react-bootstrap/Alert';
 import { RECENTARTICLES_URL } from '../../constants/api';
-import RecentArticleItem from './RecentArticleItem';
+import ArticleItem from './ArticleItem';
 
 function RecentArticles() {
   const [articles, setRecentArticles] = useState([]);
@@ -33,18 +34,25 @@ function RecentArticles() {
   if (loading) {
     return <Spinner animation="border" className="spinner" />;
   }
+
   return (
     <>
-      {articles.map((recent) => (
-        <Col sm={6} md={3} key={recent.id}>
-          <RecentArticleItem
-            id={recent.id}
-            date_={recent.acf.date_}
-            category_={recent.acf.category_}
-            title={recent.title.rendered}
-          />
-        </Col>
-      ))}
+      <Row>
+        {articles.map((recent) => (
+          <Col sm={6} md={6} lg={4} xl={3} key={recent.id}>
+            <ArticleItem
+              id={recent.id}
+              date_={recent.acf.date_}
+              author_={recent.acf.author_}
+              category_={recent.acf.category_}
+              title={recent.title.rendered}
+              excerpt={recent.excerpt.rendered}
+              image_={recent.acf.image_.url}
+              readtime_={recent.acf.readtime_}
+            />
+          </Col>
+        ))}
+      </Row>
     </>
   );
 }
