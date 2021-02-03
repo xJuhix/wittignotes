@@ -21,6 +21,14 @@ $font-size-base: 1rem !default;
 $h1-font-size: $font-size-base * 4 !default;
 $h2-font-size: $font-size-base * 3 !default;
 
+$headings-font-weight: null !default;
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: $headings-font-weight;
+}
+
 $navbar-light-toggler-border-color: $colour-headerfooter !default;
 $navbar-dark-color: $colour-secondary !default;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;

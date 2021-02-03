@@ -7,6 +7,22 @@
   width: 100%;
 }
 
+.btn-browse {
+	background-color: $colour-secondary;
+	border-radius: 0;
+	display: flex;
+	justify-content: center;
+	
+	margin-top: 3rem;
+	
+
+	&:hover {
+		background-color: $colour-blue;
+		color: $colour-secondary;
+	}
+}
+
+
 .about {
   background-color: $colour-secondary;
   margin-bottom: 7rem;

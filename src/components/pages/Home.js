@@ -3,6 +3,8 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 import Heading from '../layout/Heading';
 import Felix from '../../images/fw.png';
 import RecentArticles from '../article/RecentArticles';
@@ -15,6 +17,14 @@ export function Home() {
           <Heading title="My opinions and views on Books, Economics and Productivity" />
         </Container>
       </Jumbotron>
+
+      <Link to="/search/">
+        {' '}
+        <Button variant="browse" size="lg">
+          {' '}
+          Browse Articles
+        </Button>
+      </Link>
 
       <h2>Meet Me</h2>
 
