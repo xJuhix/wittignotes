@@ -36,7 +36,13 @@ function AllArticles() {
     return <Alert variant="warning" className="erroralert" />;
   }
   if (loading) {
-    return <Spinner animation="border" className="spinner" />;
+    return (
+      <Spinner
+        animation="border"
+        className="spinner"
+        variant="info"
+      />
+    );
   }
 
   // eslint-disable-next-line func-names

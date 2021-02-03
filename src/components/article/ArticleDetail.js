@@ -9,6 +9,8 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import { FaClock, FaUser, FaCalendarDay } from 'react-icons/fa';
+import Spinner from 'react-bootstrap/Spinner';
+import Alert from 'react-bootstrap/Alert';
 import { BASE_URL } from '../../constants/api';
 import Heading from '../layout/Heading';
 // eslint-disable-next-line import/no-named-as-default
@@ -16,7 +18,8 @@ import Books from '../pages/Books';
 
 function ArticleDetails() {
   const [article, setArticle] = useState(null);
-  const [hasError, setError] = useState(false);
+  const [hasError, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   const { id } = useParams();
 
@@ -29,11 +32,24 @@ function ArticleDetails() {
         setArticle(json);
         console.log(json);
       })
-      .catch(() => {
-        setError(true);
-      });
+      .catch((error) => {
+        setError(error);
+      })
+      .finally(() => setLoading(false));
   }, [url]);
 
+  if (hasError) {
+    return <Alert variant="warning" className="erroralert" />;
+  }
+  if (loading) {
+    return (
+      <Spinner
+        animation="border"
+        className="spinner"
+        variant="info"
+      />
+    );
+  }
   return (
     <>
       <div className="article">
