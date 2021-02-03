@@ -26,6 +26,10 @@
   &__socialmedia-icon {
     color: $colour-secondary;
     padding: 5px;
-    padding-top: 10px;
+		padding-top: 10px;
+		
+		:hover{
+			color: $colour-blue;
+		}
   }
 }

@@ -32,10 +32,10 @@ export function Home() {
 
       <div className="about">
         <Row>
-          <Col className="about__image">
+          <Col sm={6} md={5} className="about__image">
             <img src={Felix} className="photo" alt="Felix Wittig" />
           </Col>
-          <Col className="about__text">
+          <Col sm={6} md={5} className="about__text">
             <h3>Felix Wittig</h3>
             <p>
               Hi friends, my name is Felix and I am a Business

@@ -23,6 +23,11 @@
 		font-size: 28px;
 		font-family: $font-navlink;
 		font-weight: 500;
+
+		@media (max-width: 576px) and (max-width: 768px) {
+			font-size: 24px;
+			width: 300px;
+		}
 		
 
 		&:hover {
@@ -79,19 +84,9 @@
 
 	&__text {
 		padding: 35px;
-		width: 200px;
-		margin-right: 10rem;
-
-
-		@media (min-width: 760px) and (max-width: 1080px) {
-			margin-right: 3rem;
-			width: auto;
-			justify-content: center;
-		}
 
 		@media (max-width: 576px) {
 			padding: 15px;
-			margin-right: auto;
 			width: auto;
 		}
 		
@@ -112,7 +107,8 @@
 
 			@media (max-width: 576px) {
 				text-align: left;
-				margin-left: 2rem;
+				margin-left: 1.5rem;
+				margin-right: 1.5rem;
 			}
 			
 		}

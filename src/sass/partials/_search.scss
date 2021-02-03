@@ -14,7 +14,10 @@
 	width: 80% !important;
 
 	.form-control{
-		font-size: 18px;
+		font-size: 22px;
+		font-family: $font-navlink;
 		height: 3rem;
+		border-radius: 30px;
+		padding: 20px;
 	}
 }

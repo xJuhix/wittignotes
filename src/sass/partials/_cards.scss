@@ -19,11 +19,11 @@
   }
 
   .btn-submit {
-    background-color: $colour-primary;
+		background-color: $colour-primary;
+		font-family: $font-navlink;
+		font-size: 22px;
     border-radius: 0;
     color: $colour-secondary;
-    margin-top: 35px;
-    width: 100%;
 
     &:hover {
       background-color: $colour-blue;
