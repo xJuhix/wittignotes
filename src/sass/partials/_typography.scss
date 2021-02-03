@@ -1,6 +1,6 @@
 //Typography
 
-$font-h1: 'Cormorant Garamond Bold', serif;
+$font-h1: 'Cormorant Garamond', serif;
 $font-h2: 'Montserrat Bold', sans-serif;
 $font-h3: 'Montserrat', sans-serif;
 $font-navlink: 'Playfair Display', serif;
@@ -10,7 +10,8 @@ h1 {
   color: $colour-heading;
   font-family: $font-h1;
   padding-top: 3rem;
-  text-align: center;
+	text-align: center;
+	font-weight: bold;
 }
 
 h2 {

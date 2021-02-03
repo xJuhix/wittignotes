@@ -6,6 +6,8 @@
 import React, { useState, useEffect } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Spinner from 'react-bootstrap/Spinner';
+import Alert from 'react-bootstrap/Alert';
 import { BASE_URL } from '../../constants/api';
 import ArticleSearch from './ArticleSearch';
 import ArticleItem from './ArticleItem';
@@ -13,7 +15,8 @@ import ArticleItem from './ArticleItem';
 function AllArticles() {
   const [articles, setArticles] = useState([]);
   const [filtredArticles, setFilteredArticles] = useState([]);
-  const [hasError, setError] = useState(false);
+  const [hasError, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   // Getting the articles from API
   useEffect(() => {
@@ -23,10 +26,18 @@ function AllArticles() {
         setArticles(json);
         setFilteredArticles(json);
       })
-      .catch(() => {
-        setError(true);
-      });
+      .catch((error) => {
+        setError(error);
+      })
+      .finally(() => setLoading(false));
   }, []);
+
+  if (hasError) {
+    return <Alert variant="warning" className="erroralert" />;
+  }
+  if (loading) {
+    return <Spinner animation="border" className="spinner" />;
+  }
 
   // eslint-disable-next-line func-names
   const searchArticles = function (event) {
