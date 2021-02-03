@@ -18,7 +18,7 @@ export function Home() {
         </Container>
       </Jumbotron>
 
-      <div className="articlebrowse">
+      <div className="browse__button">
         <Link to="/search/">
           {' '}
           <Button variant="browse" size="lg">
