@@ -11,6 +11,8 @@ import Image from 'react-bootstrap/Image';
 import { FaClock, FaUser, FaCalendarDay } from 'react-icons/fa';
 import { BASE_URL } from '../../constants/api';
 import Heading from '../layout/Heading';
+// eslint-disable-next-line import/no-named-as-default
+import Books from '../pages/Books';
 
 function ArticleDetails() {
   const [article, setArticle] = useState(null);
