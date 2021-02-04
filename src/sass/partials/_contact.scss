@@ -18,15 +18,17 @@
     width: 500px;
 
     .btn-submit {
-      background-color: $colour-primary;
-      border-radius: 0;
-      color: $colour-secondary;
+      background-color: $colour-secondary;
+			border-radius: 30px;
+			border: solid;
+			font-family: $font-navlink;
       margin-top: 35px;
       width: 100%;
 
       &:hover {
-        background-color: $colour-blue;
-        color: $colour-secondary;
+				background-color: $colour-headerfooter;
+				color: $colour-blue;
+				text-decoration: underline 2px $colour-blue;
       }
     }
   }

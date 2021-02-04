@@ -20,8 +20,9 @@ $theme-colors: (
 $font-size-base: 1rem !default;
 $h1-font-size: $font-size-base * 4 !default;
 $h2-font-size: $font-size-base * 3 !default;
+$h5-font-size: $font-size-base * 1.8 !default;
 
-$headings-font-weight: null !default;
+$headings-font-weight: 0 !default;
 
 
 h1, h2, h3, h4, h5, h6,

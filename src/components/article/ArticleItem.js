@@ -18,7 +18,7 @@ function ArticleItem({
     <Card className="card">
       <Card.Img className="card__image" variant="top" src={image_} />
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title className="card__title">{title}</Card.Title>
         <Card.Text
           className="card__excerpt"
           dangerouslySetInnerHTML={{ __html: excerpt }}
