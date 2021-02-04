@@ -6,15 +6,18 @@
 		text-align: left;
 		margin-left: 3rem;
 
+		@media (min-width: 768px) and (max-width: 1024px) {
+			margin-left: 2rem;
+		}
+
     @media (max-width: 576px) {
-      margin-left: 0.5rem;
+			margin-left: 0.5rem;
     }
   }
 
   &__content {
-    margin-top: 5rem;
+    margin-top: 1.5rem;
 		padding-left: 5rem;
-		
 
     @media (max-width: 576px) {
       display: flex;
@@ -29,7 +32,12 @@
     background-color: $colour-secondary;
     margin-left: 3rem;
     margin-top: 2rem;
-    max-width: 700px;
+		max-width: 700px;
+
+		@media (min-width: 768px) and (max-width: 1024px) {
+			margin-left: 2rem;
+			margin-right: 2rem;
+		}
 
     @media (max-width: 576px) {
       margin-left: 0.5rem;
@@ -40,8 +48,14 @@
 
   &__text {
     margin-left: 3rem;
-    margin-top: 3rem;
-    max-width: 700px;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		max-width: 700px;
+		
+		@media (min-width: 768px) and (max-width: 1024px) {
+			margin-left: 2rem;
+			margin-right: 2rem;
+		}
 
     @media (max-width: 576px) {
       margin-left: 0.5rem;
