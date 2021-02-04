@@ -42,7 +42,7 @@ function EconomicsArticles() {
   }
   return (
     <>
-      <Row>
+      <Row className="row__cards">
         {articles.map((economics) => (
           <Col sm={12} md={6} lg={4} xl={3} key={economics.id}>
             <ArticleItem

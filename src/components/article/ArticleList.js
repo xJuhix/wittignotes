@@ -57,7 +57,7 @@ function AllArticles() {
   return (
     <>
       <ArticleSearch handleSearch={searchArticles} />
-      <Row>
+      <Row className="row__cards">
         {filtredArticles.map((article) => (
           <Col sm={12} md={6} lg={4} xl={3} key={article.id}>
             <ArticleItem

@@ -42,7 +42,7 @@ function BookArticles() {
   }
   return (
     <>
-      <Row>
+      <Row className="row__cards">
         {articles.map((book) => (
           <Col sm={6} md={6} lg={4} xl={3} key={book.id}>
             <ArticleItem

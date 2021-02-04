@@ -43,7 +43,7 @@ function ProductivityArticles() {
 
   return (
     <>
-      <Row>
+      <Row className="row__cards">
         {articles.map((productivity) => (
           <Col sm={6} md={6} lg={4} xl={3} key={productivity.id}>
             <ArticleItem

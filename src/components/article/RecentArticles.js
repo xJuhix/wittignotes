@@ -43,7 +43,7 @@ function RecentArticles() {
 
   return (
     <>
-      <Row>
+      <Row className="row__cards">
         {articles.map((recent) => (
           <Col sm={6} md={6} lg={4} xl={3} key={recent.id}>
             <ArticleItem
