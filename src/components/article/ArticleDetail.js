@@ -61,7 +61,7 @@ function ArticleDetails() {
                   {article.acf.category_}
                 </h3>
                 <Heading title={article.title.rendered} />
-                <Col article=" article__image">
+                <Col>
                   <Image
                     src={article.acf.image_.url}
                     width="100%"
