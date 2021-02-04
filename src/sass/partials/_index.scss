@@ -7,7 +7,6 @@
   width: 100%;
 }
 
-
 .browse__button{
 	display: flex;
   justify-content: center;
@@ -43,15 +42,16 @@
 .about {
 	margin-top: 7rem;
 	margin-bottom: 7rem;
-  background-color: $colour-secondary;
+	background-color: $colour-secondary;
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+		height: 550px;
+		margin-top: 4rem;
+	}
   
-
-  @media (min-width: 760px) and (max-width: 1080px) {
-    margin-top: 4rem;
-  }
-
   .row {
-    height: 300px;
+		height: 300px;
+		margin-bottom: 7rem;
 
     @media (min-width: 300px) and (max-width: 1080px) {
       height: auto;
@@ -60,25 +60,32 @@
 	
 	&__image {
   display: flex;
-  justify-content: center;
+	justify-content: center; 
+	margin-bottom: 12rem;
+
+		@media (min-width: 760px) and (max-width: 1080px) {
+			margin-left: 3rem;
+		}
+		@media (max-width: 576px) {
+			margin-bottom: 2rem;
+
+		}
 
 		.photo {
 			bottom: 90px;
-			height: 450px;
+			height: 500px;
 			position: relative;
 
 			@media (min-width: 760px) and (max-width: 1080px) {
 				bottom: 0;
-				height: 400px;
-				margin-top: 10px;
-				width: 450px;
+				margin-top: 1.5rem;
+				width: 550px;
 			}
 
 			@media (max-width: 576px) {
 				bottom: 0;
-				height: 300px;
-				margin-top: 10px;
-				width: 350px;
+				margin-top: 2rem;
+				width: 525px;
 			}
 		}
 	}
@@ -86,6 +93,10 @@
 	&__text {
 		padding: 35px;
 
+		@media (min-width: 760px) and (max-width: 1024px) {
+			margin-left: 3rem;
+			margin-top: 7rem;
+		}
 		@media (max-width: 576px) {
 			padding: 15px;
 			width: auto;
@@ -102,7 +113,7 @@
 			margin-top: 2rem;
 			text-align: center;
 
-			@media (max-width: 768px) {
+			@media (min-width: 760px) and (max-width: 1024px) {
 				text-align: left;
 			}
 
