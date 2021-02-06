@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 import React from 'react';
 import { useForm } from 'react-hook-form';
@@ -38,7 +40,26 @@ function ContactForm() {
   const [sent, setSent] = React.useState(false);
 
   function onSubmit(data) {
-    console.log('data', data);
+    const raw = {
+      yourEmail: 'felixwittig@wittignotes.com',
+      yourName: 'Felix',
+      replyEmail: data.email,
+      replyName: `${data.firstName} ${data.lastName}`,
+      content: data.messageField,
+    };
+    const requestOptions = {
+      method: 'POST',
+      mode: 'cors',
+      credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: raw,
+    };
+    fetch('http://localhost:4242/sendmail', requestOptions)
+      .then((response) => console.log(response.text()))
+      .then((result) => console.log(result))
+      .catch((error) => console.log('error', error));
     setSent(true);
   }
 

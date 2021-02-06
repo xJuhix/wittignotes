@@ -40,12 +40,20 @@
 
 		&:hover {
 			text-decoration: underline $colour-blue 3px;
+			text-decoration-color: $colour-blue;
 			-webkit-text-decoration-color: $colour-blue;
 		}
-
-		&.active, :active {
-			text-decoration: underline $colour-blue 3px;
+		
+		&.active, &:active {
+			text-decoration: underline;
+			text-decoration-style: solid;
+			text-decoration-thickness: 3px;
+			text-decoration-color: $colour-blue;
 			-webkit-text-decoration-color: $colour-blue ;
+			-webkit-text-decoration-thickness: 3px ;
+			-webkit-text-decoration-style: solid ;
+	
+			
 		}
 	}
 }
