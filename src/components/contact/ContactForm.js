@@ -51,11 +51,10 @@ function ContactForm() {
     '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',
   );
   const msg = {
-    to: req.body.yourEmail,
-    from: req.body.yourEmail,
-    subject: req.body.subject,
-    text: req.body.content,
-    replyTo: req.body.replyEmail,
+    to: data.email,
+    from: 'felixwittig@wittignotes.com',
+    subject: data.subjectField,
+    text: data.subjectField,
   };
 
   sgMail.send(msg).then(
@@ -69,14 +68,14 @@ function ContactForm() {
   );
 
   function onSubmit(data) {
-    const raw = {
+    /* const raw = {
       yourEmail: 'felixwittig@wittignotes.com',
       yourName: 'Felix',
       replyEmail: data.email,
       replyName: `${data.firstName} ${data.lastName}`,
       subject: data.subjectField,
-      content: data.messageField,
-    };
+      content: data.subjectField,
+    }; */
 
     /* axios
       .post('http://localhost:4242/sendmail', raw, {
