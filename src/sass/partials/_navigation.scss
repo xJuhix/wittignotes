@@ -40,10 +40,12 @@
 
 		&:hover {
 			text-decoration: underline $colour-blue 3px;
+			-webkit-text-decoration-color: $colour-blue;
 		}
 
-		&.active {
+		&.active, :active {
 			text-decoration: underline $colour-blue 3px;
+			-webkit-text-decoration-color: $colour-blue ;
 		}
 	}
 }

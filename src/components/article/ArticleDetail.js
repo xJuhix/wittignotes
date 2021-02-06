@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-danger */
 /* eslint-disable no-console */
@@ -71,20 +72,23 @@ function ArticleDetails() {
                 <Row className="article__details">
                   <p>
                     <span>
-                      <FaUser size="1em" />
+                      <FaUser />
                     </span>
+                    {' '}
                     {article.acf.author_}
                   </p>
                   <p>
                     <span>
-                      <FaClock size="1rem" />
+                      <FaClock />
                     </span>
+                    {' '}
                     {article.acf.readtime_}
                   </p>
                   <p>
                     <span>
-                      <FaCalendarDay size="1rem" />
+                      <FaCalendarDay />
                     </span>
+                    {' '}
                     {article.acf.date_}
                   </p>
                 </Row>

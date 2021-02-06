@@ -25,7 +25,7 @@ function ArticleItem({
         />
         <Card.Text className="card__info">
           <span>
-            <FaClock size="1rem" />
+            <FaClock />
           </span>
           {' '}
           Read-time:
@@ -34,7 +34,7 @@ function ArticleItem({
         </Card.Text>
         <Card.Text>
           <span>
-            <FaFolder size="1rem" />
+            <FaFolder />
           </span>
           {' '}
           {category_}
