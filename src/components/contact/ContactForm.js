@@ -46,38 +46,17 @@ function ContactForm() {
 
   const [sent, setSent] = React.useState(false);
 
-  const sgMail = require('@sendgrid/mail');
-  sgMail.setApiKey(
-    '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',
-  );
-  const msg = {
-    to: data.email,
-    from: 'felixwittig@wittignotes.com',
-    subject: data.subjectField,
-    text: data.subjectField,
-  };
-
-  sgMail.send(msg).then(
-    () => {},
-    (error) => {
-      console.log(error);
-      if (error.response) {
-        console.log(error.response.body);
-      }
-    },
-  );
-
   function onSubmit(data) {
-    /* const raw = {
+    const raw = {
       yourEmail: 'felixwittig@wittignotes.com',
       yourName: 'Felix',
       replyEmail: data.email,
       replyName: `${data.firstName} ${data.lastName}`,
-      subject: data.subjectField,
-      content: data.subjectField,
-    }; */
+      subject: 'Whatever subject you want',
+      content: data.messageField,
+    };
 
-    /* axios
+    axios
       .post('http://localhost:4242/sendmail', raw, {
         withCredentials: true,
       })
@@ -88,100 +67,95 @@ function ContactForm() {
         console.log(error);
       });
     setSent(true);
-  } */
-
-    return (
-      <div className="contact">
-        <Form
-          className="contact__form"
-          onSubmit={handleSubmit(onSubmit)}
-        >
-          {sent && (
-            <div className="validationMessage">
-              <h3>Thank you!</h3>
-              <p>
-                Your message has been successfully sent. I will get
-                back to you as soon as possible!
-              </p>
-            </div>
-          )}
-          <Heading title="Contact Me" />
-          <Form.Group>
-            <Form.Label>First name:</Form.Label>
-            <Form.Control
-              type="text"
-              name="firstName"
-              placeholder="Enter your first name"
-              ref={register}
-            />
-            {errors.firstName && (
-              <ErrorMessage>{errors.firstName.message}</ErrorMessage>
-            )}
-          </Form.Group>
-
-          <Form.Group>
-            <Form.Label>Last name:</Form.Label>
-            <Form.Control
-              type="text"
-              name="lastName"
-              placeholder="Enter your Last name"
-              ref={register}
-            />
-            {errors.lastName && (
-              <ErrorMessage>{errors.lastName.message}</ErrorMessage>
-            )}
-          </Form.Group>
-
-          <Form.Group>
-            <Form.Label>Email:</Form.Label>
-            <Form.Control
-              type="text"
-              name="email"
-              placeholder="Enter your Email"
-              ref={register}
-            />
-            {errors.email && (
-              <ErrorMessage>{errors.email.message}</ErrorMessage>
-            )}
-          </Form.Group>
-          <Form.Group>
-            <Form.Label>Subject:</Form.Label>
-            <Form.Control
-              name="subjectField"
-              type="text"
-              placeholder="What is your enquiry about"
-              ref={register}
-            />
-            {errors.messageField && (
-              <ErrorMessage>
-                {errors.subjectField.message}
-              </ErrorMessage>
-            )}
-          </Form.Group>
-
-          <Form.Group>
-            <Form.Label>Message:</Form.Label>
-            <Form.Control
-              as="textarea"
-              name="messageField"
-              type="text"
-              placeholder="Enter your Message"
-              ref={register}
-            />
-            {errors.messageField && (
-              <ErrorMessage>
-                {errors.messageField.message}
-              </ErrorMessage>
-            )}
-          </Form.Group>
-
-          <Button variant="submit" size="lg" type="submit">
-            Send
-          </Button>
-        </Form>
-      </div>
-    );
   }
+
+  return (
+    <div className="contact">
+      <Form
+        className="contact__form"
+        onSubmit={handleSubmit(onSubmit)}
+      >
+        {sent && (
+          <div className="validationMessage">
+            <h3>Thank you!</h3>
+            <p>
+              Your message has been successfully sent. I will get back
+              to you as soon as possible!
+            </p>
+          </div>
+        )}
+        <Heading title="Contact Me" />
+        <Form.Group>
+          <Form.Label>First name:</Form.Label>
+          <Form.Control
+            type="text"
+            name="firstName"
+            placeholder="Enter your first name"
+            ref={register}
+          />
+          {errors.firstName && (
+            <ErrorMessage>{errors.firstName.message}</ErrorMessage>
+          )}
+        </Form.Group>
+
+        <Form.Group>
+          <Form.Label>Last name:</Form.Label>
+          <Form.Control
+            type="text"
+            name="lastName"
+            placeholder="Enter your Last name"
+            ref={register}
+          />
+          {errors.lastName && (
+            <ErrorMessage>{errors.lastName.message}</ErrorMessage>
+          )}
+        </Form.Group>
+
+        <Form.Group>
+          <Form.Label>Email:</Form.Label>
+          <Form.Control
+            type="text"
+            name="email"
+            placeholder="Enter your Email"
+            ref={register}
+          />
+          {errors.email && (
+            <ErrorMessage>{errors.email.message}</ErrorMessage>
+          )}
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Subject:</Form.Label>
+          <Form.Control
+            name="subjectField"
+            type="text"
+            placeholder="What is your enquiry about"
+            ref={register}
+          />
+          {errors.messageField && (
+            <ErrorMessage>{errors.subjectField.message}</ErrorMessage>
+          )}
+        </Form.Group>
+
+        <Form.Group>
+          <Form.Label>Message:</Form.Label>
+          <Form.Control
+            as="textarea"
+            name="messageField"
+            type="text"
+            placeholder="Enter your Message"
+            ref={register}
+          />
+          {errors.messageField && (
+            <ErrorMessage>{errors.messageField.message}</ErrorMessage>
+          )}
+        </Form.Group>
+
+        <Button variant="submit" size="lg" type="submit">
+          Send
+        </Button>
+      </Form>
+    </div>
+  );
 }
 
 export default ContactForm;
