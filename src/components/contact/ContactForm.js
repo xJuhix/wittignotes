@@ -7,6 +7,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import axios from 'axios';
 import ErrorMessage from './ErrorMessage';
 import Heading from '../layout/Heading';
 
@@ -25,6 +26,11 @@ const schema = yup.object().shape({
     .string()
     .email('Invalid email')
     .required('A valid Email is required'),
+
+  subjectField: yup
+    .string()
+    .required('Subject is required')
+    .min(4, 'Your subject must contain at least 4 characters'),
 
   messageField: yup
     .string()
@@ -45,21 +51,20 @@ function ContactForm() {
       yourName: 'Felix',
       replyEmail: data.email,
       replyName: `${data.firstName} ${data.lastName}`,
+      subject: data.subjectField,
       content: data.messageField,
     };
-    const requestOptions = {
-      method: 'POST',
-      mode: 'cors',
-      credentials: 'include',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: raw,
-    };
-    fetch('http://localhost:4242/sendmail', requestOptions)
-      .then((response) => console.log(response.text()))
-      .then((result) => console.log(result))
-      .catch((error) => console.log('error', error));
+
+    axios
+      .post('http://localhost:4242/sendmail', raw, {
+        withCredentials: true,
+      })
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
     setSent(true);
   }
 
@@ -115,6 +120,18 @@ function ContactForm() {
           />
           {errors.email && (
             <ErrorMessage>{errors.email.message}</ErrorMessage>
+          )}
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Subject:</Form.Label>
+          <Form.Control
+            name="subjectField"
+            type="text"
+            placeholder="What is your enquiry about"
+            ref={register}
+          />
+          {errors.messageField && (
+            <ErrorMessage>{errors.subjectField.message}</ErrorMessage>
           )}
         </Form.Group>
 
