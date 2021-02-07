@@ -8,7 +8,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-// import axios from 'axios';
+import axios from 'axios';
 import ErrorMessage from './ErrorMessage';
 import Heading from '../layout/Heading';
 
@@ -52,7 +52,7 @@ function ContactForm() {
       yourName: 'Felix',
       replyEmail: data.email,
       replyName: `${data.firstName} ${data.lastName}`,
-      subject: 'Whatever subject you want',
+      subject: data.subjectField,
       content: data.messageField,
     };
 
