@@ -78,9 +78,7 @@ function ContactForm() {
         {sent && (
           <div className="validationMessage">
             <h3>Thank you!</h3>
-            <p>
-              I will get back to you as soon as possible!
-            </p>
+            <p>I will get back to you as soon as possible!</p>
           </div>
         )}
         <Heading title="Contact Me" />
