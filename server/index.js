@@ -25,14 +25,14 @@ app.post('/sendmail', async (req, res) => {
 		return res.status(200).json({
 			success: true,
 			data: {
-				message: 'Your message has been successfully sent.'
+				message: 'Message sent.'
 			}
 		})
 	}, (error) => {
 		return res.status(400).json({
 			success: false,
 			data: {
-				message: 'Sory it appears something went wrong'
+				message: 'Ssomething went wrong.'
 			}
 		})
 	})
