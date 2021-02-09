@@ -23,19 +23,15 @@ app.post('/sendmail', async (req, res) => {
 
 	
 	sgMail.send(msg).then(() => {
-		return res.status(200).json({
+		res.status(200).json({
 			success: true,
-			data: {
-				message: 'Message sent.'
-			}
-		})
+				message: 'Your message has been successfully sent. I will get back to you as soon as possible!'
+		});
 	}, (error) => {
-		return res.status(400).json({
-				success: false,
-				data: {
-					message: 'Something went wrong.'
-				}
-		})
+		res.status(200).json({
+			success: false,
+			message: 'It seems like something went wrong. Please try again later.'
+		});
 })
 });
 app.listen(4242, () => console.log(`Listening on port ${4242}!`));

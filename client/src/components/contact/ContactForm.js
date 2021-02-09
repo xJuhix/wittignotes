@@ -45,6 +45,24 @@ function ContactForm() {
   });
 
   const [sent, setSent] = React.useState(false);
+  const [responseObj, setResponseObj] = React.useState(true, 'Test');
+
+  function ValidationMessage(props) {
+    if (responseObj.success) {
+      return (
+        <div className="validationMessage">
+          <h3>Thank you!</h3>
+          <p>{responseObj.message}</p>
+        </div>
+      );
+    }
+    return (
+      <div className="validationMessage">
+        <h3>Sorry</h3>
+        <p>{responseObj.message}</p>
+      </div>
+    );
+  }
 
   function onSubmit(data) {
     const raw = {
@@ -62,9 +80,17 @@ function ContactForm() {
       })
       .then((response) => {
         console.log(response.data);
+        setResponseObj({
+          success: response.data.success,
+          message: response.data.message,
+        });
+        console.log(responseObj);
       })
       .catch((error) => {
-        console.log(error);
+        setResponseObj({
+          success: false,
+          message: error.response.data.message,
+        });
       });
     setSent(true);
   }
@@ -75,15 +101,7 @@ function ContactForm() {
         className="contact__form"
         onSubmit={handleSubmit(onSubmit)}
       >
-        {sent && (
-          <div className="validationMessage">
-            <h3>Thank you!</h3>
-            <p>
-              Your message has been successfully sent. I will get back
-              to you as soon as possible!
-            </p>
-          </div>
-        )}
+        {sent && <ValidationMessage header="Thank You!" />}
         <Heading title="Contact Me" />
         <Form.Group>
           <Form.Label>First name:</Form.Label>

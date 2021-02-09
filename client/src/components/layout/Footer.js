@@ -22,7 +22,7 @@ function Footer() {
               className="footer__socialmedia-icon"
             >
               <span>
-                <FaGoodreadsG size="2rem" />
+                <FaGoodreadsG />
               </span>
             </a>
             <a
@@ -31,7 +31,7 @@ function Footer() {
               className="footer__socialmedia-icon"
             >
               <span>
-                <FaYoutube size="2rem" />
+                <FaYoutube />
               </span>
             </a>
             <a
@@ -40,7 +40,7 @@ function Footer() {
               className="footer__socialmedia-icon"
             >
               <span>
-                <FaInstagram size="2rem" />
+                <FaInstagram />
               </span>
             </a>
             <a
@@ -49,7 +49,7 @@ function Footer() {
               className="footer__socialmedia-icon"
             >
               <span>
-                <FaFacebook size="2rem" />
+                <FaFacebook />
               </span>
             </a>
             <a
@@ -58,7 +58,7 @@ function Footer() {
               className="footer__socialmedia-icon"
             >
               <span>
-                <FaTwitter size="2rem" />
+                <FaTwitter />
               </span>
             </a>
           </div>

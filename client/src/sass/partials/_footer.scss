@@ -20,7 +20,7 @@
 
   &__text,
   &__links {
-    padding-top: 15px;
+		padding-top: 15px;
   }
 
   &__socialmedia-icon {
@@ -30,6 +30,13 @@
 		
 		:hover{
 			color: $colour-blue;
+		}
+
+		span {
+			svg {
+				height: 2rem;
+				width: 2rem;
+			}
 		}
 
   }
