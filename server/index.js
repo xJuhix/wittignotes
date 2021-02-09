@@ -30,14 +30,9 @@ app.post('/sendmail', async (req, res) => {
 			}
 		})
 	}, (error) => {
-		return res.status(400).json({
-			success: false,
-			data: {
-				message: 'Something went wrong.'
+		return console.log(error)
 			}
-		})
-	})
-});
+)});
 
 app.listen(4242, () => console.log(`Listening on port ${4242}!`));
 
