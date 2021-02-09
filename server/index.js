@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey = (process.env.SENDGRID_API_KEY);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 app.post('/sendmail', async (req, res) => {
 	console.log(req.body);
@@ -30,9 +30,13 @@ app.post('/sendmail', async (req, res) => {
 			}
 		})
 	}, (error) => {
-		return console.log(error)
-			}
-)});
-
+		return res.status(400).json({
+				success: false,
+				data: {
+					message: 'Something went wrong.'
+				}
+		})
+})
+});
 app.listen(4242, () => console.log(`Listening on port ${4242}!`));
 
