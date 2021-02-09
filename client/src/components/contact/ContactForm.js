@@ -79,8 +79,9 @@ function ContactForm() {
           <div className="validationMessage">
             <h3>Thank you!</h3>
             <p>
-							Your message has been successfully sent.
-							I will get back to you as soon as possible!</p>
+              Your message has been successfully sent. I will get back
+              to you as soon as possible!
+            </p>
           </div>
         )}
         <Heading title="Contact Me" />
