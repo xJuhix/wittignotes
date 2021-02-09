@@ -1,13 +1,16 @@
+require('dotenv').config()
+
+console.log(process.env)
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const express = require('express');
-var axios = require('axios');
+const axios = require('axios');
 const app = express();
 app.use(bodyParser.json());
 app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('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');
+sgMail.setApiKey = (process.env.SENDGRID_API_KEY);
 
 app.post('/sendmail', async (req, res) => {
 	console.log(req.body);
