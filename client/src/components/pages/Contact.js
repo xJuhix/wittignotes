@@ -6,7 +6,7 @@ export function Contact() {
   return (
     <>
       <Helmet>
-        <title>WittigNotes | Contact</title>
+        <title>Contact</title>
         <meta
           name="description"
           content="WittigNotes Contact is how you contact Felix Wittig"

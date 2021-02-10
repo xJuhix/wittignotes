@@ -14,7 +14,7 @@ export function Home() {
   return (
     <>
       <Helmet>
-        <title>WittigNotes | Home</title>
+        <title>Home</title>
         <meta
           name="description"
           content="WittigNotes is a blog developed to share opinions, reviews and tips on Books, Economics and Productivity"

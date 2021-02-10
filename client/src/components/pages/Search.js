@@ -7,7 +7,7 @@ export function AllArticles() {
   return (
     <>
       <Helmet>
-        <title>WittigNotes | Search</title>
+        <title>Search</title>
         <meta
           name="description"
           content="WittigNotes Search is where you can browse through all published articles and seacrh them by name."
