@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -12,6 +13,26 @@ import RecentArticles from '../article/RecentArticles';
 export function Home() {
   return (
     <>
+      <div>
+        <Helmet>
+          <html lang="en" />
+          <title>WittigNotes</title>
+          <meta charSet="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <meta
+            name="description"
+            content="WittigNotes is a blog developed to share opinions, reviews and tips on Books, Economics and Productivity"
+          />
+
+          <meta
+            name="keywords"
+            content="blog, tips, opinions, books, economics, productivity, reviews, "
+          />
+        </Helmet>
+      </div>
       <Jumbotron>
         <Container>
           <Heading title="My opinions and views on Books, Economics and Productivity" />
