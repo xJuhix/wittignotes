@@ -19,14 +19,11 @@ h2 {
   font-family: $font-h2;
 	text-align: center;
 	font-weight: 600;
-	
 }
 
 h3 {
 	font-family: $font-h3;
 	font-weight: 500;
-	
-	
 }
 
 .nav-link {
@@ -37,11 +34,19 @@ h3 {
 
 p {
   font-family: $font-p;
-  font-size: 20px;
+	font-size: 20px;
+	
+	@media (max-width: 576px) {
+		font-size: 16px;
+  }
 }
 
 q {
   font-family: $font-navlink;
   font-size: 32px;
-  text-align: center;
+	text-align: center;
+
+	@media (max-width: 576px) {
+		font-size: 28px;
+  }
 }
