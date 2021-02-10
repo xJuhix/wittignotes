@@ -29,6 +29,7 @@ function ArticleItem({
           </span>
           {' '}
           Read-time:
+					{' '}
           {readtime_}
           {' '}
         </Card.Text>
