@@ -13,7 +13,7 @@ export function Economics() {
       <div>
         <Helmet>
           <html lang="en" />
-          <title>WittigNotes</title>
+          <title>WittigNotes | Economics</title>
           <meta charSet="UTF-8" />
           <meta
             name="viewport"

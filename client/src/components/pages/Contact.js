@@ -7,7 +7,7 @@ export function Contact() {
     <div>
       <Helmet>
         <html lang="en" />
-        <title>WittigNotes</title>
+        <title>WittigNotes | Contact</title>
         <meta charSet="UTF-8" />
         <meta
           name="viewport"

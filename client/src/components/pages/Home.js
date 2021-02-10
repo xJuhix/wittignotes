@@ -16,7 +16,7 @@ export function Home() {
       <div>
         <Helmet>
           <html lang="en" />
-          <title>WittigNotes</title>
+          <title>WittigNotes | Home</title>
           <meta charSet="UTF-8" />
           <meta
             name="viewport"

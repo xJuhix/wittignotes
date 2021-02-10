@@ -14,7 +14,7 @@ export function Books() {
 		 <div>
       <Helmet>
         <html lang="en" />
-        <title>WittigNotes</title>
+        <title>WittigNotes | Books</title>
         <meta charSet="UTF-8" />
         <meta
           name="viewport"

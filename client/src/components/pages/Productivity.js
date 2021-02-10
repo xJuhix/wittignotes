@@ -12,7 +12,7 @@ export function Productivity() {
       <div>
         <Helmet>
           <html lang="en" />
-          <title>WittigNotes</title>
+          <title>WittigNotes | Productivity</title>
           <meta charSet="UTF-8" />
           <meta
             name="viewport"
