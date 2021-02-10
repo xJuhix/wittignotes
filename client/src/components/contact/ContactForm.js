@@ -45,7 +45,7 @@ function ContactForm() {
   });
 
   const [sent, setSent] = React.useState(false);
-  const [responseObj, setResponseObj] = React.useState(true, 'Test');
+  const [responseObj, setResponseObj] = React.useState(true);
 
   function ValidationMessage(props) {
     if (responseObj.success) {
@@ -58,7 +58,7 @@ function ContactForm() {
     }
     return (
       <div className="validationMessage">
-        <h3>Sorry</h3>
+        <h3>Sorry,</h3>
         <p>{responseObj.message}</p>
       </div>
     );
@@ -101,7 +101,7 @@ function ContactForm() {
         className="contact__form"
         onSubmit={handleSubmit(onSubmit)}
       >
-        {sent && <ValidationMessage header="Thank You!" />}
+        {sent && <ValidationMessage />}
         <Heading title="Contact Me" />
         <Form.Group>
           <Form.Label>First name:</Form.Label>
