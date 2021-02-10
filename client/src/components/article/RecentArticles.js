@@ -34,6 +34,7 @@ function RecentArticles() {
   if (loading) {
     return (
       <Spinner
+        role="status"
         animation="border"
         className="spinner"
         variant="info"

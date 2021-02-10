@@ -34,6 +34,7 @@ function BookArticles() {
   if (loading) {
     return (
       <Spinner
+        role="status"
         animation="border"
         className="spinner"
         variant="info"
