@@ -11,26 +11,13 @@ import BookArticles from '../article/BookArticles';
 export function Books() {
   return (
     <>
-		 <div>
       <Helmet>
-        <html lang="en" />
         <title>WittigNotes | Books</title>
-        <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        />
         <meta
           name="description"
-          content="WittigNotes is a blog developed to share opinions, reviews and tips on Books, Economics and Productivity"
-        />
-
-        <meta
-          name="keywords"
-          content="blog, tips, opinions, books, economics, productivity, reviews, "
+          content="WittigNotes Books page, here you will find book recomentdation, book reviews and my book bag."
         />
       </Helmet>
-			</div>
       <div className="category">
         <Row>
           <Col sm={12} lg={6} className="category__content">

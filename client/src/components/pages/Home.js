@@ -13,26 +13,14 @@ import RecentArticles from '../article/RecentArticles';
 export function Home() {
   return (
     <>
-      <div>
-        <Helmet>
-          <html lang="en" />
-          <title>WittigNotes | Home</title>
-          <meta charSet="UTF-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <meta
-            name="description"
-            content="WittigNotes is a blog developed to share opinions, reviews and tips on Books, Economics and Productivity"
-          />
+      <Helmet>
+        <title>WittigNotes | Home</title>
+        <meta
+          name="description"
+          content="WittigNotes is a blog developed to share opinions, reviews and tips on Books, Economics and Productivity"
+        />
+      </Helmet>
 
-          <meta
-            name="keywords"
-            content="blog, tips, opinions, books, economics, productivity, reviews, "
-          />
-        </Helmet>
-      </div>
       <Jumbotron>
         <Container>
           <Heading title="My opinions and views on Books, Economics and Productivity" />
