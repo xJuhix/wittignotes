@@ -1,5 +1,10 @@
 # WittigNotes
 
+## Noroff Frontend Devlopment  - Project Exam 2 
+### by Juhi Saigal 
+
+This is a blog site made for a client. This blog covers Books, Economics and Productivity reviews, tips and opinions. 
+
 # How to start
 ## After downloading the files 
 
