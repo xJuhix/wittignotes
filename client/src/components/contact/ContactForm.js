@@ -76,7 +76,7 @@ function ContactForm() {
     };
 
     axios
-      .post('/sendmail', raw, {
+      .post('http://localhost:8080/sendmail', raw, {
         withCredentials: true,
       })
       .then((response) => {
