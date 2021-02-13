@@ -1,14 +1,14 @@
 # WittigNotes
 
-# How to satrt
+# How to start
 ## After downloading the files 
 
-# Run (Server)
+## Run (Server)
 ### `npm run start`
 
 This will start the server
 
-#  Run Client 
+##  Run Client 
 ### make sure you are in the Client folder and run `npm run start`
 
 This will run the app itself 
