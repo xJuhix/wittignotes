@@ -65,6 +65,7 @@ function ContactForm() {
   }
 
   function onSubmit(data) {
+    console.log(data);
     const raw = {
       yourEmail: 'felixwittig@wittignotes.com',
       yourName: 'Felix',
@@ -75,7 +76,7 @@ function ContactForm() {
     };
 
     axios
-      .post('http://localhost:4242/sendmail', raw, {
+      .post('/sendmail', raw, {
         withCredentials: true,
       })
       .then((response) => {
@@ -149,7 +150,7 @@ function ContactForm() {
             placeholder="What is your enquiry about"
             ref={register}
           />
-          {errors.messageField && (
+          {errors.subjectField && (
             <ErrorMessage>{errors.subjectField.message}</ErrorMessage>
           )}
         </Form.Group>
